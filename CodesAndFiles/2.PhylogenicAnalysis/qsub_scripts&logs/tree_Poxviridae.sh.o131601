@@ -1,0 +1,348 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f07-2.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Poxviridae_trimal.fa --prefix 6-PhylogenyTree/Poxviridae_tree/Poxviridae --redo -T 6 --mem 48G --ufboot 1000 --boot-trees
+Seed:    184016 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  8 05:01:17 2022
+Kernel:  AVX+FMA - 6 threads (12 CPU cores detected)
+
+Reading alignment file 3-trimAl/Poxviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 5 sequences with 1286 columns, 462 distinct patterns
+177 parsimony-informative, 378 singleton sites, 731 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  UGR70-k141_670594_Marker    0.08%    passed     99.98%
+   2  YP_009177121.1              0.08%    failed      0.28%
+   3  YP_008658488.1              0.00%    failed      2.21%
+   4  NP_570228.1                 0.08%    passed      5.86%
+   5  QGN68072.1                  0.00%    passed      6.05%
+****  TOTAL                       0.05%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -8306.294
+Optimal log-likelihood: -8306.285
+Proportion of invariable sites: 0.288
+Gamma shape alpha: 1.391
+Parameters optimization took 1 rounds (0.006 sec)
+Time for fast ML tree search: 0.029 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 1286) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            8453.169     7   16920.338    16920.425    16956.453
+  2  LG+I          8313.000     8   16641.999    16642.112    16683.274
+  3  LG+G4         8308.017     8   16632.034    16632.147    16673.309
+  4  LG+I+G4       8306.276     9   16630.553    16630.694    16676.986
+  5  LG+R2         8307.492     9   16632.983    16633.124    16679.417
+  6  LG+R3         8306.889     11  16635.779    16635.986    16692.531
+ 15  LG+F+I        8269.249     27  16592.499    16593.701    16731.800
+ 16  LG+F+G4       8262.340     27  16578.679    16579.881    16717.980
+ 17  LG+F+I+G4     8261.030     28  16578.059    16579.351    16722.520
+ 18  LG+F+R2       8262.035     28  16580.071    16581.363    16724.531
+ 28  WAG+I         8402.040     8   16820.079    16820.192    16861.354
+ 29  WAG+G4        8407.544     8   16831.087    16831.200    16872.361
+ 30  WAG+I+G4      8401.465     9   16820.931    16821.072    16867.364
+ 31  WAG+R2        8401.795     9   16821.590    16821.731    16868.023
+ 41  WAG+F+I       8311.402     27  16676.804    16678.006    16816.105
+ 42  WAG+F+G4      8313.535     27  16681.070    16682.272    16820.370
+ 43  WAG+F+I+G4    8310.904     28  16677.807    16679.099    16822.268
+ 44  WAG+F+R2      8309.389     28  16674.778    16676.070    16819.238
+ 54  JTT+I         8370.974     8   16757.948    16758.060    16799.222
+ 55  JTT+G4        8370.697     8   16757.394    16757.507    16798.668
+ 56  JTT+I+G4      8368.136     9   16754.273    16754.414    16800.706
+ 57  JTT+R2        8368.204     9   16754.407    16754.548    16800.841
+ 67  JTT+F+I       8290.290     27  16634.581    16635.783    16773.882
+ 68  JTT+F+G4      8287.464     27  16628.928    16630.130    16768.229
+ 69  JTT+F+I+G4    8285.533     28  16627.067    16628.359    16771.527
+ 70  JTT+F+R2      8285.667     28  16627.335    16628.627    16771.795
+ 80  Q.pfam+I      8347.918     8   16711.836    16711.949    16753.110
+ 81  Q.pfam+G4     8341.550     8   16699.100    16699.213    16740.374
+ 82  Q.pfam+I+G4   8340.127     9   16698.253    16698.394    16744.687
+ 83  Q.pfam+R2     8341.272     9   16700.543    16700.684    16746.977
+ 93  Q.pfam+F+I    8291.199     27  16636.399    16637.601    16775.700
+ 94  Q.pfam+F+G4   8280.933     27  16615.866    16617.068    16755.167
+ 95  Q.pfam+F+I+G4 8280.231     28  16616.461    16617.753    16760.921
+ 96  Q.pfam+F+R2   8280.997     28  16617.994    16619.286    16762.454
+106  Q.bird+I      8489.586     8   16995.172    16995.285    17036.446
+107  Q.bird+G4     8466.864     8   16949.728    16949.840    16991.002
+108  Q.bird+I+G4   8466.403     9   16950.805    16950.946    16997.239
+109  Q.bird+R2     8469.466     9   16956.933    16957.074    17003.366
+119  Q.bird+F+I    8379.551     27  16813.101    16814.303    16952.402
+120  Q.bird+F+G4   8350.047     27  16754.094    16755.295    16893.394
+121  Q.bird+F+I+G4 8350.186     28  16756.373    16757.665    16900.833
+122  Q.bird+F+R2   8352.581     28  16761.162    16762.454    16905.623
+132  Q.mammal+I    8476.198     8   16968.395    16968.508    17009.670
+133  Q.mammal+G4   8460.669     8   16937.337    16937.450    16978.611
+134  Q.mammal+I+G4 8459.981     9   16937.962    16938.103    16984.395
+135  Q.mammal+R2   8462.497     9   16942.994    16943.135    16989.428
+145  Q.mammal+F+I  8352.855     27  16759.710    16760.912    16899.011
+146  Q.mammal+F+G4 8331.417     27  16716.834    16718.036    16856.135
+147  Q.mammal+F+I+G4 8331.413     28  16718.827    16720.119    16863.287
+148  Q.mammal+F+R2 8333.180     28  16722.361    16723.653    16866.821
+158  Q.insect+I    8304.114     8   16624.229    16624.342    16665.503
+159  Q.insect+G4   8296.830     8   16609.660    16609.773    16650.934
+160  Q.insect+I+G4 8295.450     9   16608.900    16609.041    16655.334
+161  Q.insect+R2   8296.932     9   16611.865    16612.006    16658.298
+171  Q.insect+F+I  8266.230     27  16586.460    16587.662    16725.761
+172  Q.insect+F+G4 8258.945     27  16571.890    16573.092    16711.191
+173  Q.insect+F+I+G4 8257.624     28  16571.248    16572.540    16715.708
+174  Q.insect+F+R2 8258.700     28  16573.401    16574.693    16717.861
+184  Q.plant+I     8346.197     8   16708.393    16708.506    16749.667
+185  Q.plant+G4    8327.427     8   16670.854    16670.967    16712.129
+186  Q.plant+I+G4  8326.244     9   16670.488    16670.629    16716.921
+187  Q.plant+R2    8330.476     9   16678.951    16679.093    16725.385
+197  Q.plant+F+I   8296.757     27  16647.514    16648.716    16786.815
+198  Q.plant+F+G4  8277.099     27  16608.198    16609.400    16747.499
+199  Q.plant+F+I+G4 8275.880     28  16607.759    16609.051    16752.220
+200  Q.plant+F+R2  8280.129     28  16616.258    16617.550    16760.718
+210  Q.yeast+I     8300.791     8   16617.581    16617.694    16658.856
+211  Q.yeast+G4    8294.230     8   16604.459    16604.572    16645.733
+212  Q.yeast+I+G4  8292.689     9   16603.379    16603.520    16649.812
+213  Q.yeast+R2    8293.795     9   16605.591    16605.732    16652.024
+223  Q.yeast+F+I   8263.943     27  16581.886    16583.088    16721.187
+224  Q.yeast+F+G4  8255.651     27  16565.302    16566.504    16704.603
+225  Q.yeast+F+I+G4 8254.471     28  16564.942    16566.234    16709.403
+226  Q.yeast+F+R2  8255.444     28  16566.887    16568.179    16711.347
+236  JTTDCMut+I    8370.012     8   16756.025    16756.137    16797.299
+237  JTTDCMut+G4   8370.227     8   16756.455    16756.568    16797.729
+238  JTTDCMut+I+G4 8367.556     9   16753.112    16753.253    16799.546
+239  JTTDCMut+R2   8367.497     9   16752.994    16753.135    16799.428
+249  JTTDCMut+F+I  8287.236     27  16628.471    16629.673    16767.772
+250  JTTDCMut+F+G4 8284.797     27  16623.593    16624.795    16762.894
+251  JTTDCMut+F+I+G4 8282.794     28  16621.588    16622.880    16766.048
+252  JTTDCMut+F+R2 8282.837     28  16621.673    16622.965    16766.133
+262  DCMut+I       8498.848     8   17013.696    17013.809    17054.971
+263  DCMut+G4      8498.431     8   17012.862    17012.974    17054.136
+264  DCMut+I+G4    8495.066     9   17008.133    17008.274    17054.566
+265  DCMut+R2      8495.209     9   17008.417    17008.558    17054.851
+275  DCMut+F+I     8344.166     27  16742.332    16743.534    16881.633
+276  DCMut+F+G4    8338.624     27  16731.248    16732.450    16870.548
+277  DCMut+F+I+G4  8336.768     28  16729.536    16730.828    16873.996
+278  DCMut+F+R2    8337.336     28  16730.672    16731.964    16875.132
+288  VT+I          8402.665     8   16821.330    16821.443    16862.605
+289  VT+G4         8409.019     8   16834.038    16834.151    16875.312
+290  VT+I+G4       8402.660     9   16823.319    16823.460    16869.753
+291  VT+R2         8402.772     9   16823.545    16823.686    16869.978
+301  VT+F+I        8344.757     27  16743.513    16744.715    16882.814
+302  VT+F+G4       8349.477     27  16752.954    16754.156    16892.255
+303  VT+F+I+G4     8346.422     28  16748.845    16750.137    16893.305
+304  VT+F+R2       8344.023     28  16744.047    16745.339    16888.507
+314  PMB+I         8487.578     8   16991.156    16991.269    17032.430
+315  PMB+G4        8491.926     8   16999.852    16999.965    17041.127
+316  PMB+I+G4      8488.853     9   16995.706    16995.847    17042.139
+317  PMB+R2        8486.821     9   16991.642    16991.783    17038.076
+327  PMB+F+I       8410.937     27  16875.873    16877.075    17015.174
+328  PMB+F+G4      8414.061     27  16882.122    16883.324    17021.423
+329  PMB+F+I+G4    8411.476     28  16878.952    16880.244    17023.412
+330  PMB+F+R2      8409.403     28  16874.805    16876.097    17019.265
+340  Blosum62+I    8448.697     8   16913.395    16913.508    16954.669
+341  Blosum62+G4   8454.034     8   16924.068    16924.181    16965.342
+342  Blosum62+I+G4 8448.654     9   16915.307    16915.449    16961.741
+343  Blosum62+R2   8448.331     9   16914.661    16914.802    16961.095
+353  Blosum62+F+I  8393.155     27  16840.311    16841.513    16979.612
+354  Blosum62+F+G4 8397.871     27  16849.743    16850.945    16989.043
+355  Blosum62+F+I+G4 8394.778     28  16845.557    16846.849    16990.017
+356  Blosum62+F+R2 8392.338     28  16840.676    16841.968    16985.136
+366  Dayhoff+I     8497.810     8   17011.620    17011.733    17052.894
+367  Dayhoff+G4    8497.329     8   17010.657    17010.770    17051.932
+368  Dayhoff+I+G4  8493.970     9   17005.940    17006.081    17052.374
+369  Dayhoff+R2    8494.125     9   17006.250    17006.391    17052.684
+379  Dayhoff+F+I   8343.169     27  16740.339    16741.541    16879.640
+380  Dayhoff+F+G4  8337.561     27  16729.122    16730.324    16868.423
+381  Dayhoff+F+I+G4 8335.713     28  16727.426    16728.718    16871.886
+382  Dayhoff+F+R2  8336.282     28  16728.565    16729.857    16873.025
+392  mtREV+I       8928.730     8   17873.461    17873.573    17914.735
+393  mtREV+G4      8874.545     8   17765.089    17765.202    17806.363
+394  mtREV+I+G4    8874.642     9   17767.285    17767.426    17813.718
+395  mtREV+R2      8877.320     9   17772.640    17772.782    17819.074
+405  mtREV+F+I     8490.229     27  17034.458    17035.660    17173.759
+406  mtREV+F+G4    8456.225     27  16966.451    16967.653    17105.752
+407  mtREV+F+I+G4  8455.362     28  16966.723    16968.015    17111.183
+408  mtREV+F+R2    8461.703     28  16979.406    16980.698    17123.866
+418  mtART+I       9014.494     8   18044.989    18045.102    18086.263
+419  mtART+G4      8875.600     8   17767.200    17767.313    17808.474
+420  mtART+I+G4    8875.412     9   17768.824    17768.965    17815.258
+421  mtART+R2      8863.772     9   17745.544    17745.685    17791.978
+431  mtART+F+I     8569.481     27  17192.963    17194.165    17332.264
+432  mtART+F+G4    8475.839     27  17005.677    17006.879    17144.978
+433  mtART+F+I+G4  8474.948     28  17005.896    17007.188    17150.356
+434  mtART+F+R2    8471.346     28  16998.692    16999.984    17143.152
+444  mtZOA+I       8840.408     8   17696.817    17696.929    17738.091
+445  mtZOA+G4      8753.529     8   17523.058    17523.170    17564.332
+446  mtZOA+I+G4    8754.303     9   17526.607    17526.748    17573.040
+447  mtZOA+R2      8750.002     9   17518.004    17518.145    17564.437
+457  mtZOA+F+I     8438.060     27  16930.119    16931.321    17069.420
+458  mtZOA+F+G4    8386.571     27  16827.142    16828.343    16966.442
+459  mtZOA+F+I+G4  8386.921     28  16829.842    16831.134    16974.302
+460  mtZOA+F+R2    8389.958     28  16835.916    16837.208    16980.376
+470  mtMet+I       8855.804     8   17727.607    17727.720    17768.881
+471  mtMet+G4      8798.526     8   17613.053    17613.166    17654.327
+472  mtMet+I+G4    8799.785     9   17617.571    17617.712    17664.004
+473  mtMet+R2      8799.792     9   17617.585    17617.726    17664.018
+483  mtMet+F+I     8444.925     27  16943.851    16945.053    17083.152
+484  mtMet+F+G4    8409.837     27  16873.675    16874.877    17012.976
+485  mtMet+F+I+G4  8410.141     28  16876.281    16877.573    17020.741
+486  mtMet+F+R2    8413.005     28  16882.011    16883.303    17026.471
+496  mtVer+I       8979.886     8   17975.772    17975.885    18017.047
+497  mtVer+G4      8903.026     8   17822.051    17822.164    17863.326
+498  mtVer+I+G4    8904.051     9   17826.101    17826.243    17872.535
+499  mtVer+R2      8903.721     9   17825.443    17825.584    17871.876
+509  mtVer+F+I     8510.125     27  17074.250    17075.452    17213.551
+510  mtVer+F+G4    8464.529     27  16983.057    16984.259    17122.358
+511  mtVer+F+I+G4  8464.051     28  16984.103    16985.395    17128.563
+512  mtVer+F+R2    8468.980     28  16993.960    16995.252    17138.420
+522  mtInv+I       8902.183     8   17820.366    17820.479    17861.641
+523  mtInv+G4      8859.502     8   17735.003    17735.116    17776.278
+524  mtInv+I+G4    8860.645     9   17739.290    17739.431    17785.724
+525  mtInv+R2      8861.863     9   17741.727    17741.868    17788.161
+535  mtInv+F+I     8416.557     27  16887.115    16888.317    17026.416
+536  mtInv+F+G4    8393.841     27  16841.683    16842.885    16980.984
+537  mtInv+F+I+G4  8393.476     28  16842.952    16844.244    16987.412
+538  mtInv+F+R2    8396.805     28  16849.611    16850.903    16994.071
+548  mtMAM+I       9071.647     8   18159.295    18159.407    18200.569
+549  mtMAM+G4      8933.766     8   17883.531    17883.644    17924.806
+550  mtMAM+I+G4    8933.629     9   17885.258    17885.399    17931.692
+551  mtMAM+R2      8930.929     9   17879.857    17879.998    17926.291
+561  mtMAM+F+I     8599.452     27  17252.903    17254.105    17392.204
+562  mtMAM+F+G4    8514.614     27  17083.227    17084.429    17222.528
+563  mtMAM+F+I+G4  8513.618     28  17083.237    17084.529    17227.697
+564  mtMAM+F+R2    8519.285     28  17094.570    17095.862    17239.030
+574  HIVb+I        8457.992     8   16931.983    16932.096    16973.258
+575  HIVb+G4       8436.149     8   16888.298    16888.411    16929.573
+576  HIVb+I+G4     8435.152     9   16888.303    16888.444    16934.737
+577  HIVb+R2       8439.533     9   16897.065    16897.207    16943.499
+587  HIVb+F+I      8373.760     27  16801.520    16802.722    16940.821
+588  HIVb+F+G4     8349.100     27  16752.201    16753.403    16891.502
+589  HIVb+F+I+G4   8347.986     28  16751.972    16753.264    16896.432
+590  HIVb+F+R2     8353.060     28  16762.119    16763.411    16906.579
+600  HIVw+I        8613.634     8   17243.268    17243.380    17284.542
+601  HIVw+G4       8596.708     8   17209.415    17209.528    17250.690
+602  HIVw+I+G4     8594.910     9   17207.820    17207.961    17254.254
+603  HIVw+R2       8598.893     9   17215.787    17215.928    17262.220
+613  HIVw+F+I      8466.734     27  16987.469    16988.671    17126.770
+614  HIVw+F+G4     8448.124     27  16950.248    16951.450    17089.549
+615  HIVw+F+I+G4   8446.710     28  16949.420    16950.712    17093.880
+616  HIVw+F+R2     8450.871     28  16957.742    16959.034    17102.202
+626  FLU+I         8378.451     8   16772.902    16773.014    16814.176
+627  FLU+G4        8356.224     8   16728.448    16728.561    16769.722
+628  FLU+I+G4      8356.447     9   16730.894    16731.035    16777.328
+629  FLU+R2        8357.584     9   16733.167    16733.308    16779.601
+639  FLU+F+I       8323.420     27  16700.841    16702.042    16840.141
+640  FLU+F+G4      8292.829     27  16639.658    16640.860    16778.959
+641  FLU+F+I+G4    8293.691     28  16643.383    16644.675    16787.843
+642  FLU+F+R2      8294.810     28  16645.619    16646.911    16790.080
+652  rtREV+I       8435.436     8   16886.873    16886.985    16928.147
+653  rtREV+G4      8430.874     8   16877.749    16877.862    16919.023
+654  rtREV+I+G4    8428.835     9   16875.670    16875.811    16922.103
+655  rtREV+R2      8429.911     9   16877.823    16877.964    16924.257
+665  rtREV+F+I     8310.684     27  16675.368    16676.570    16814.669
+666  rtREV+F+G4    8302.133     27  16658.266    16659.468    16797.567
+667  rtREV+F+I+G4  8300.960     28  16657.920    16659.212    16802.381
+668  rtREV+F+R2    8302.090     28  16660.180    16661.472    16804.640
+678  cpREV+I       8390.534     8   16797.068    16797.180    16838.342
+679  cpREV+G4      8387.298     8   16790.596    16790.708    16831.870
+680  cpREV+I+G4    8385.301     9   16788.602    16788.744    16835.036
+681  cpREV+R2      8385.421     9   16788.843    16788.984    16835.276
+691  cpREV+F+I     8350.113     27  16754.227    16755.429    16893.528
+692  cpREV+F+G4    8346.333     27  16746.665    16747.867    16885.966
+693  cpREV+F+I+G4  8344.458     28  16744.915    16746.207    16889.376
+694  cpREV+F+R2    8344.661     28  16745.322    16746.614    16889.782
+Akaike Information Criterion:           Q.yeast+F+I+G4
+Corrected Akaike Information Criterion: Q.yeast+F+I+G4
+Bayesian Information Criterion:         Q.yeast+G4
+Best-fit model: Q.yeast+G4 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Poxviridae_tree/Poxviridae.model.gz
+CPU time for ModelFinder: 31.490 seconds (0h:0m:31s)
+Wall-clock time for ModelFinder: 5.309 seconds (0h:0m:5s)
+Generating 1000 samples for ultrafast bootstrap (seed: 184016)...
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -8294.230
+Optimal log-likelihood: -8294.230
+Gamma shape alpha: 0.521
+Parameters optimization took 1 rounds (0.004 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.001522 sec (of wall-clock time) 0.009158 sec(of CPU time)
+Computing RapidNJ tree took 0.000156 sec (of wall-clock time) 0.000936 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -8310.188
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.044 second
+Computing log-likelihood of 3 initial trees ... 0.006 seconds
+Current best score: -8294.230
+
+Do NNI search on 5 best initial trees
+Finish initializing candidate tree set (5)
+Current best tree score: -8294.230 / CPU time: 0.138
+Number of iterations: 5
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -8294.230
+Iteration 10 / LogL: -8294.230 / Time: 0h:0m:0s
+Iteration 20 / LogL: -8304.151 / Time: 0h:0m:0s
+Iteration 30 / LogL: -8304.151 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -8294.251 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 50 / LogL: -8294.238 / Time: 0h:0m:1s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -8312.518
+UFBoot trees printed to 6-PhylogenyTree/Poxviridae_tree/Poxviridae.ufboot
+Iteration 60 / LogL: -8294.231 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 70 / LogL: -8294.238 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 80 / LogL: -8294.456 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 90 / LogL: -8294.254 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -8294.269 / Time: 0h:0m:2s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -8311.169
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 6-PhylogenyTree/Poxviridae_tree/Poxviridae.ufboot
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -8294.230
+Optimal log-likelihood: -8294.230
+Gamma shape alpha: 0.521
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -8294.230
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Poxviridae_tree/Poxviridae.splits.nex
+Total tree length: 1.035
+
+Total number of iterations: 101
+CPU time used for tree search: 11.315 sec (0h:0m:11s)
+Wall-clock time used for tree search: 1.919 sec (0h:0m:1s)
+Total CPU time used: 12.695 sec (0h:0m:12s)
+Total wall-clock time used: 2.186 sec (0h:0m:2s)
+UFBoot trees printed to 6-PhylogenyTree/Poxviridae_tree/Poxviridae.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Poxviridae_tree/Poxviridae.splits.nex...
+5 taxa and 9 splits.
+Consensus tree written to 6-PhylogenyTree/Poxviridae_tree/Poxviridae.contree
+Reading input trees file 6-PhylogenyTree/Poxviridae_tree/Poxviridae.contree
+Log-likelihood of consensus tree: -8294.230
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Poxviridae_tree/Poxviridae.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Poxviridae_tree/Poxviridae.treefile
+  Likelihood distances:          6-PhylogenyTree/Poxviridae_tree/Poxviridae.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Poxviridae_tree/Poxviridae.splits.nex
+  Consensus tree:                6-PhylogenyTree/Poxviridae_tree/Poxviridae.contree
+  UFBoot trees:                  6-PhylogenyTree/Poxviridae_tree/Poxviridae.ufboot
+  Screen log file:               6-PhylogenyTree/Poxviridae_tree/Poxviridae.log
+
+Date and Time: Fri Jul  8 05:01:24 2022

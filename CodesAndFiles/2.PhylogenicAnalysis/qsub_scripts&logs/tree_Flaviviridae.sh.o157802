@@ -1,0 +1,330 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f08-6.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Flaviviridae_trimal.fa --prefix 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae --redo -T 16 --mem 80G --ufboot 1000 --boot-trees
+Seed:    584331 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 14 18:39:52 2022
+Kernel:  AVX+FMA - 16 threads (32 CPU cores detected)
+
+Reading alignment file 3-trimAl/Flaviviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 63 sequences with 1801 columns, 1798 distinct patterns
+1744 parsimony-informative, 47 singleton sites, 10 constant sites
+                               Gap/Ambiguity  Composition  p-value
+   1  AAD31543.1                       0.78%    failed      0.02%
+   2  AGJ71779.1                       1.17%    failed      2.15%
+   3  AGJ71780.1                       0.17%    failed      0.00%
+   4  NP_056931.1                      2.67%    passed     27.67%
+   5  NP_620062.1                      6.66%    failed      0.00%
+   6  YP_001008348.1                   2.39%    failed      0.00%
+   7  YP_001469633.1                   0.94%    failed      3.22%
+   8  YP_007697649.1                   0.50%    failed      0.00%
+   9  YP_008992092.1                   6.72%    failed      0.00%
+  10  YP_009001464.1                   3.33%    failed      0.00%
+  11  YP_009026410.1                   2.50%    failed      0.04%
+  12  YP_009028573.1                   4.55%    failed      0.00%
+  13  YP_009029999.1                  62.35%    failed      0.00%
+  14  YP_009041466.1                   1.55%    failed      0.06%
+  15  YP_009044207.1                   0.56%    failed      0.07%
+  16  YP_009056847.1                   2.05%    failed      0.07%
+  17  YP_009056848.1                   2.44%    failed      0.12%
+  18  YP_009109557.1                   0.50%    passed     17.81%
+  19  YP_009109558.1                   0.56%    passed     64.21%
+  20  YP_009109602.1                   0.17%    failed      0.00%
+  21  YP_009130616.1                   2.05%    passed     63.50%
+  22  YP_009227295.1                   1.39%    failed      0.01%
+  23  YP_009175071.1                   5.11%    failed      0.00%
+  24  YP_009179227.1                   1.39%    passed     27.17%
+  25  YP_009256193.1                   0.94%    failed      0.01%
+  26  YP_009256194.1                   0.28%    failed      0.08%
+  27  YP_009259488.1                   1.28%    failed      0.10%
+  28  YP_009305197.1                   1.28%    failed      0.38%
+  29  YP_009322132.1                   0.33%    passed     14.86%
+  30  YP_009325330.1                   0.94%    passed     22.10%
+  31  YP_009325369.1                   1.39%    passed     67.98%
+  32  YP_009345036.1                   3.11%    failed      0.00%
+  33  YP_009350102.1                   1.72%    failed      0.01%
+  34  YP_009351861.1                   1.72%    failed      0.00%
+  35  YP_009361867.1                   0.33%    failed      0.00%
+  36  YP_009388303.1                   5.50%    failed      0.00%
+  37  YP_009388577.1                   1.22%    failed      0.14%
+  38  YP_009389296.1                   1.44%    passed     13.89%
+  39  YP_009506356.1                   0.67%    passed      8.04%
+  40  YP_009506358.1                   0.78%    passed     37.78%
+  41  YP_009506359.1                   1.00%    passed     10.29%
+  42  YP_009506360.1                   0.61%    passed     24.26%
+  43  YP_009506361.1                   1.11%    passed     40.29%
+  44  YP_009506364.1                   0.22%    failed      0.01%
+  45  YP_009506365.1                   0.11%    failed      0.15%
+  46  YP_009506366.1                   0.11%    failed      0.16%
+  47  YP_009506368.1                   0.00%    passed      5.67%
+  48  YP_009551951.1                   7.77%    failed      0.00%
+  49  YP_009552082.1                  13.83%    failed      0.00%
+  50  YP_009552767.1                   1.89%    failed      0.03%
+  51  YP_009553586.1                   0.56%    passed     59.68%
+  52  QNS27181.1                       0.61%    passed     53.54%
+  53  RNALIV2277-k141_3561_Marker     12.55%    passed     74.97%
+  54  RNALIV2277-k141_54693_Marker     9.72%    passed     55.28%
+  55  BAT2223-k141_49374_Marker       32.76%    failed      0.00%
+  56  911-k141_316744_Marker          48.97%    failed      0.18%
+  57  913-k141_456469_Marker          74.90%    failed      3.11%
+  58  945-k141_359293_Marker          69.57%    passed     52.17%
+  59  19BR184KID-k119_12303_Marker     1.17%    passed     16.15%
+  60  RNALIV2005-k141_13395_Marker    61.52%    failed      2.06%
+  61  19BR183-k141_61310_Marker       16.05%    passed     50.51%
+  62  912-k141_160989_Marker           0.61%    passed     14.23%
+  63  19BR182KID-k141_466676_Marker   64.41%    passed     12.27%
+WARNING: 5 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                            8.82%  39 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.052 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -174786.805
+Optimal log-likelihood: -174786.143
+Proportion of invariable sites: 0.005
+Gamma shape alpha: 1.556
+Parameters optimization took 1 rounds (0.109 sec)
+Time for fast ML tree search: 1.078 seconds
+
+NOTE: ModelFinder requires 184 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 1801) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            179564.934   123 359375.868   359394.057   360051.888
+  2  LG+I          179315.983   124 358879.966   358898.462   359561.482
+  3  LG+G4         174824.362   124 349896.725   349915.221   350578.241
+  4  LG+I+G4       174786.141   125 349822.282   349841.088   350509.294
+  5  LG+R2         175591.548   125 351433.095   351451.901   352120.108
+  6  LG+R3         174846.646   127 349947.292   349966.725   350645.296
+  7  LG+R4         174602.145   129 349462.290   349482.362   350171.287
+  8  LG+R5         174545.677   131 349353.353   349374.074   350073.342
+  9  LG+R6         174517.305   133 349300.610   349321.993   350031.591
+ 10  LG+R7         174514.273   135 349298.547   349320.601   350040.520
+ 22  LG+F+R6       173970.746   152 348245.492   348273.716   349080.899
+WARNING: Log-likelihood -173980 of LG+F+R7 worse than LG+F+R6 -173971
+ 23  LG+F+R7       173979.885   154 348267.770   348296.773   349114.169
+ 35  WAG+R6        175137.143   133 350540.285   350561.667   351271.266
+ 36  WAG+R7        175133.511   135 350537.021   350559.075   351278.994
+ 48  WAG+F+R6      174396.787   152 349097.573   349125.797   349932.980
+WARNING: Log-likelihood -174403 of WAG+F+R7 worse than WAG+F+R6 -174397
+ 49  WAG+F+R7      174402.590   154 349113.181   349142.185   349959.580
+ 61  JTT+R6        176885.299   133 354036.599   354057.981   354767.579
+ 62  JTT+R7        176882.051   135 354034.102   354056.156   354776.075
+ 74  JTT+F+R6      176573.736   152 353451.472   353479.695   354286.878
+WARNING: Log-likelihood -176584 of JTT+F+R7 worse than JTT+F+R6 -176574
+ 75  JTT+F+R7      176583.503   154 353475.006   353504.010   354321.405
+ 87  Q.pfam+R6     174284.323   133 348834.646   348856.028   349565.627
+ 88  Q.pfam+R7     174280.035   135 348830.069   348852.123   349572.042
+100  Q.pfam+F+R6   174010.613   152 348325.227   348353.450   349160.633
+WARNING: Log-likelihood -174020 of Q.pfam+F+R7 worse than Q.pfam+F+R6 -174011
+101  Q.pfam+F+R7   174019.899   154 348347.797   348376.801   349194.196
+113  Q.bird+R6     180674.066   133 361614.132   361635.514   362345.113
+114  Q.bird+R7     180670.701   135 361611.401   361633.455   362353.374
+126  Q.bird+F+R6   180937.071   152 362178.142   362206.366   363013.549
+WARNING: Log-likelihood -180941 of Q.bird+F+R7 worse than Q.bird+F+R6 -180937
+127  Q.bird+F+R7   180941.069   154 362190.137   362219.141   363036.536
+139  Q.mammal+R6   179209.138   133 358684.277   358705.659   359415.258
+140  Q.mammal+R7   179207.029   135 358684.058   358706.112   359426.031
+152  Q.mammal+F+R6 179283.913   152 358871.825   358900.049   359707.232
+WARNING: Log-likelihood -179293 of Q.mammal+F+R7 worse than Q.mammal+F+R6 -179284
+153  Q.mammal+F+R7 179292.715   154 358893.430   358922.434   359739.829
+165  Q.insect+R6   175973.044   133 352212.087   352233.470   352943.068
+166  Q.insect+R7   175970.540   135 352211.080   352233.134   352953.053
+178  Q.insect+F+R6 175357.817   152 351019.633   351047.856   351855.040
+WARNING: Log-likelihood -175367 of Q.insect+F+R7 worse than Q.insect+F+R6 -175358
+179  Q.insect+F+R7 175367.483   154 351042.966   351071.969   351889.365
+191  Q.plant+R6    177781.363   133 355828.725   355850.107   356559.706
+192  Q.plant+R7    177777.583   135 355825.166   355847.220   356567.139
+204  Q.plant+F+R6  177501.405   152 355306.810   355335.033   356142.217
+WARNING: Log-likelihood -177508 of Q.plant+F+R7 worse than Q.plant+F+R6 -177501
+205  Q.plant+F+R7  177507.907   154 355323.815   355352.818   356170.214
+217  Q.yeast+R6    176304.925   133 352875.850   352897.232   353606.831
+218  Q.yeast+R7    176297.979   135 352865.957   352888.011   353607.930
+230  Q.yeast+F+R6  174825.018   152 349954.037   349982.260   350789.444
+WARNING: Log-likelihood -174833 of Q.yeast+F+R7 worse than Q.yeast+F+R6 -174825
+231  Q.yeast+F+R7  174832.932   154 349973.863   350002.867   350820.262
+243  JTTDCMut+R6   176865.625   133 353997.249   354018.631   354728.230
+244  JTTDCMut+R7   176862.315   135 353994.630   354016.684   354736.603
+256  JTTDCMut+F+R6 176536.414   152 353376.829   353405.052   354212.235
+WARNING: Log-likelihood -176546 of JTTDCMut+F+R7 worse than JTTDCMut+F+R6 -176536
+257  JTTDCMut+F+R7 176545.570   154 353399.139   353428.143   354245.538
+269  DCMut+R6      178059.353   133 356384.706   356406.088   357115.687
+WARNING: Log-likelihood -178064 of DCMut+R7 worse than DCMut+R6 -178059
+270  DCMut+R7      178064.166   135 356398.332   356420.386   357140.305
+282  DCMut+F+R6    176785.996   152 353875.991   353904.214   354711.398
+WARNING: Log-likelihood -176788 of DCMut+F+R7 worse than DCMut+F+R6 -176786
+283  DCMut+F+R7    176787.562   154 353883.123   353912.127   354729.522
+295  VT+R6         175204.829   133 350675.657   350697.040   351406.638
+296  VT+R7         175203.101   135 350676.202   350698.256   351418.175
+308  VT+F+R6       174535.254   152 349374.507   349402.731   350209.914
+309  VT+F+R7       174533.334   154 349374.668   349403.672   350221.067
+321  PMB+R6        174872.399   133 350010.797   350032.179   350741.778
+322  PMB+R7        174871.022   135 350012.043   350034.097   350754.016
+334  PMB+F+R6      174643.731   152 349591.461   349619.685   350426.868
+WARNING: Log-likelihood -174652 of PMB+F+R7 worse than PMB+F+R6 -174644
+335  PMB+F+R7      174651.848   154 349611.696   349640.699   350458.095
+347  Blosum62+R6   175020.503   133 350307.006   350328.388   351037.987
+348  Blosum62+R7   175018.603   135 350307.206   350329.260   351049.179
+360  Blosum62+F+R6 174548.761   152 349401.521   349429.744   350236.928
+361  Blosum62+F+R7 174546.169   154 349400.338   349429.342   350246.737
+373  Dayhoff+R6    178064.963   133 356395.927   356417.309   357126.908
+WARNING: Log-likelihood -178070 of Dayhoff+R7 worse than Dayhoff+R6 -178065
+374  Dayhoff+R7    178070.327   135 356410.653   356432.707   357152.626
+386  Dayhoff+F+R6  176792.899   152 353889.797   353918.021   354725.204
+WARNING: Log-likelihood -176795 of Dayhoff+F+R7 worse than Dayhoff+F+R6 -176793
+387  Dayhoff+F+R7  176795.103   154 353898.206   353927.209   354744.605
+399  mtREV+R6      185520.570   133 371307.140   371328.522   372038.121
+400  mtREV+R7      185506.635   135 371283.270   371305.324   372025.244
+412  mtREV+F+R6    178546.249   152 357396.497   357424.721   358231.904
+WARNING: Log-likelihood -178548 of mtREV+F+R7 worse than mtREV+F+R6 -178546
+413  mtREV+F+R7    178548.013   154 357404.026   357433.030   358250.425
+425  mtART+R6      187029.418   133 374324.836   374346.218   375055.817
+426  mtART+R7      187026.250   135 374322.500   374344.554   375064.473
+438  mtART+F+R6    180342.884   152 360989.768   361017.991   361825.175
+439  mtART+F+R7    180343.824   154 360995.647   361024.651   361842.046
+451  mtZOA+R6      182077.442   133 364420.883   364442.265   365151.864
+452  mtZOA+R7      182073.938   135 364417.876   364439.930   365159.849
+464  mtZOA+F+R6    177983.878   152 356271.755   356299.979   357107.162
+WARNING: Log-likelihood -177987 of mtZOA+F+R7 worse than mtZOA+F+R6 -177984
+465  mtZOA+F+R7    177987.478   154 356282.956   356311.959   357129.355
+477  mtMet+R6      185736.609   133 371739.218   371760.600   372470.199
+478  mtMet+R7      185723.959   135 371717.919   371739.973   372459.892
+490  mtMet+F+R6    178921.558   152 358147.116   358175.339   358982.522
+491  mtMet+F+R7    178919.283   154 358146.565   358175.569   358992.964
+503  mtVer+R6      188313.529   133 376893.059   376914.441   377624.040
+504  mtVer+R7      188308.533   135 376887.067   376909.121   377629.040
+516  mtVer+F+R6    181781.161   152 363866.322   363894.545   364701.729
+517  mtVer+F+R7    181768.853   154 363845.706   363874.710   364692.105
+529  mtInv+R6      185810.280   133 371886.560   371907.942   372617.541
+530  mtInv+R7      185799.128   135 371868.256   371890.310   372610.229
+542  mtInv+F+R6    177055.654   152 354415.307   354443.530   355250.714
+WARNING: Log-likelihood -177061 of mtInv+F+R7 worse than mtInv+F+R6 -177056
+543  mtInv+F+R7    177061.457   154 354430.915   354459.919   355277.314
+555  mtMAM+R6      190832.214   133 381930.429   381951.811   382661.410
+556  mtMAM+R7      190823.032   135 381916.064   381938.118   382658.037
+568  mtMAM+F+R6    183463.834   152 367231.668   367259.892   368067.075
+569  mtMAM+F+R7    183460.612   154 367229.224   367258.228   368075.623
+581  HIVb+R6       181543.190   133 363352.380   363373.762   364083.361
+582  HIVb+R7       181543.505   135 363357.011   363379.065   364098.984
+594  HIVb+F+R6     180520.494   152 361344.988   361373.211   362180.395
+595  HIVb+F+R7     180517.719   154 361343.439   361372.442   362189.838
+607  HIVw+R6       191131.572   133 382529.145   382550.527   383260.125
+608  HIVw+R7       191118.283   135 382506.566   382528.620   383248.539
+620  HIVw+F+R6     186264.078   152 372832.156   372860.379   373667.563
+621  HIVw+F+R7     186260.850   154 372829.700   372858.704   373676.099
+633  FLU+R6        181522.283   133 363310.566   363331.948   364041.547
+634  FLU+R7        181521.427   135 363312.854   363334.908   364054.827
+646  FLU+F+R6      179141.526   152 358587.052   358615.275   359422.459
+647  FLU+F+R7      179138.355   154 358584.709   358613.713   359431.108
+659  rtREV+R6      175965.732   133 352197.464   352218.846   352928.445
+WARNING: Log-likelihood -175978 of rtREV+R7 worse than rtREV+R6 -175966
+660  rtREV+R7      175977.712   135 352225.425   352247.479   352967.398
+672  rtREV+F+R6    174374.867   152 349053.733   349081.957   349889.140
+WARNING: Log-likelihood -174383 of rtREV+F+R7 worse than rtREV+F+R6 -174375
+673  rtREV+F+R7    174382.933   154 349073.865   349102.869   349920.264
+685  cpREV+R6      177017.510   133 354301.020   354322.402   355032.001
+686  cpREV+R7      177015.779   135 354301.557   354323.611   355043.530
+698  cpREV+F+R6    175793.658   152 351891.316   351919.539   352726.723
+WARNING: Log-likelihood -175804 of cpREV+F+R7 worse than cpREV+F+R6 -175794
+699  cpREV+F+R7    175803.538   154 351915.076   351944.080   352761.475
+Akaike Information Criterion:           LG+F+R6
+Corrected Akaike Information Criterion: LG+F+R6
+Bayesian Information Criterion:         LG+F+R6
+Best-fit model: LG+F+R6 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.model.gz
+CPU time for ModelFinder: 32541.421 seconds (9h:2m:21s)
+Wall-clock time for ModelFinder: 2047.610 seconds (0h:34m:7s)
+Generating 1000 samples for ultrafast bootstrap (seed: 584331)...
+
+NOTE: 113 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -173970.746
+Optimal log-likelihood: -173970.702
+Site proportion and rates:  (0.030,0.034) (0.075,0.174) (0.172,0.399) (0.282,0.794) (0.326,1.342) (0.116,2.210)
+Parameters optimization took 1 rounds (0.365 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.060768 sec (of wall-clock time) 0.963252 sec(of CPU time)
+Computing RapidNJ tree took 0.005490 sec (of wall-clock time) 0.088118 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -174281.150
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.499 second
+Computing log-likelihood of 98 initial trees ... 5.097 seconds
+Current best score: -173970.702
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -173970.667
+Iteration 10 / LogL: -173981.069 / Time: 0h:0m:17s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 17: -173968.278
+Iteration 20 / LogL: -173994.103 / Time: 0h:0m:25s
+Finish initializing candidate tree set (12)
+Current best tree score: -173968.278 / CPU time: 24.193
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -173989.458 / Time: 0h:0m:35s (0h:1m:45s left)
+Iteration 40 / LogL: -173970.180 / Time: 0h:0m:45s (0h:1m:29s left)
+Iteration 50 / LogL: -173976.038 / Time: 0h:0m:55s (0h:1m:15s left)
+Log-likelihood cutoff on original alignment: -174021.729
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+Iteration 60 / LogL: -173971.075 / Time: 0h:1m:5s (0h:1m:2s left)
+Iteration 70 / LogL: -173969.660 / Time: 0h:1m:15s (0h:0m:51s left)
+Iteration 80 / LogL: -173971.247 / Time: 0h:1m:26s (0h:0m:40s left)
+Iteration 90 / LogL: -173968.636 / Time: 0h:1m:36s (0h:0m:29s left)
+Iteration 100 / LogL: -173969.925 / Time: 0h:1m:46s (0h:0m:18s left)
+Log-likelihood cutoff on original alignment: -174022.102
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+Iteration 110 / LogL: -173969.598 / Time: 0h:1m:55s (0h:1m:35s left)
+TREE SEARCH COMPLETED AFTER 118 ITERATIONS / Time: 0h:2m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -173968.278
+Optimal log-likelihood: -173968.264
+Site proportion and rates:  (0.030,0.034) (0.074,0.172) (0.170,0.396) (0.278,0.786) (0.328,1.331) (0.120,2.198)
+Parameters optimization took 1 rounds (0.379 sec)
+BEST SCORE FOUND : -173968.264
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex
+Total tree length: 49.488
+
+Total number of iterations: 118
+CPU time used for tree search: 1951.118 sec (0h:32m:31s)
+Wall-clock time used for tree search: 122.764 sec (0h:2m:2s)
+Total CPU time used: 1976.820 sec (0h:32m:56s)
+Total wall-clock time used: 124.404 sec (0h:2m:4s)
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex...
+63 taxa and 202 splits.
+Consensus tree written to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+Reading input trees file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+Log-likelihood of consensus tree: -173968.262
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.treefile
+  Likelihood distances:          6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex
+  Consensus tree:                6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+  UFBoot trees:                  6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+  Screen log file:               6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.log
+
+Date and Time: Sun Aug 14 19:16:05 2022

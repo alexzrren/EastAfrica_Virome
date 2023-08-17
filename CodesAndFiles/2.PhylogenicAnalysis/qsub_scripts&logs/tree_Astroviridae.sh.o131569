@@ -1,0 +1,128 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f08-4.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Astroviridae_trimal.fa --prefix 6-PhylogenyTree/Astroviridae_tree/Astroviridae --redo -T 8 --mem 80G --ufboot 1000 --boot-trees
+Seed:    454505 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  8 03:15:48 2022
+Kernel:  AVX+FMA - 8 threads (64 CPU cores detected)
+
+Reading alignment file 3-trimAl/Astroviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 84 sequences with 491 columns, 490 distinct patterns
+453 parsimony-informative, 25 singleton sites, 13 constant sites
+                              Gap/Ambiguity  Composition  p-value
+   1  AJF45222.1                      1.22%    passed     99.87%
+   2  NP_059443.2                     0.00%    passed     99.46%
+   3  NP_059945.2                     0.00%    passed     99.40%
+   4  NP_620617.2                     2.44%    passed     99.63%
+   5  NP_795335.1                     0.00%    passed     97.29%
+   6  YP_002290967.1                  0.81%    passed     96.46%
+   7  YP_003090286.1                  0.00%    passed     68.35%
+   8  YP_003275951.1                  0.00%    passed     58.55%
+   9  YP_005271208.1                  0.41%    passed     93.40%
+  10  YP_006843891.1                  0.41%    passed     24.17%
+  11  YP_006905859.1                  0.00%    passed     91.31%
+  12  YP_006905856.1                  0.00%    passed     95.19%
+  13  YP_006905853.1                  0.81%    passed     85.59%
+  14  YP_007003830.1                  0.00%    passed     98.68%
+  15  YP_008519301.1                  0.00%    passed     99.67%
+  16  YP_009010946.1                  1.22%    passed     99.90%
+  17  YP_009010952.1                  1.22%    passed     99.37%
+  18  YP_009010968.1                  2.04%    passed     18.77%
+  19  YP_009010978.1                  1.22%    passed     92.62%
+  20  YP_009010981.1                  0.41%    passed     92.12%
+  21  YP_009047078.1                  0.00%    passed     92.71%
+  22  YP_009047246.1                  0.00%    passed     99.47%
+  23  YP_009052461.1                  1.43%    passed     78.94%
+  24  YP_009094053.1                  0.00%    passed     82.72%
+  25  YP_009094278.2                  0.00%    passed     98.39%
+  26  YP_009130648.1                  0.00%    passed     98.93%
+  27  YP_009154706.1                  3.05%    passed     80.83%
+  28  YP_009162617.1                  1.22%    passed     99.89%
+  29  YP_009275017.1                  0.00%    passed     99.77%
+  30  YP_009333167.1                 17.11%    failed      0.00%
+  31  YP_009333313.1                 17.92%    failed      0.00%
+  32  YP_009345898.1                  0.00%    passed     85.83%
+  33  YP_009345903.1                  0.00%    passed     50.13%
+  34  YP_009362294.1                  2.04%    passed     18.59%
+  35  YP_009380533.1                 35.23%    passed     82.92%
+  36  YP_009408589.1                 16.90%    failed      0.00%
+  37  YP_009422196.1                 19.14%    failed      0.00%
+  38  YP_009552769.1                 11.00%    failed      0.43%
+  39  YP_009664775.1                  7.74%    passed     62.11%
+  40  YP_009664779.1                  0.00%    passed     91.57%
+  41  YP_009664783.1                  7.74%    passed     96.40%
+  42  YP_009664787.1                  0.00%    passed     89.36%
+  43  YP_009664790.1                  0.00%    passed     86.71%
+  44  ACF75856.1                      0.61%    passed     63.57%
+  45  AFI71936.1                      0.00%    passed     98.44%
+  46  AKB90506.1                      0.00%    passed     98.34%
+  47  APA19832.1                      0.41%    passed     80.96%
+  48  AWI14300.1                      0.00%    passed     88.13%
+  49  QOL71426.1                      0.00%    passed     98.50%
+  50  BAT0112-k79_1791_Marker        28.11%    passed     99.18%
+  51  UV32-k141_536798_Marker         0.00%    passed     98.67%
+  52  BAT260-k141_3860_Marker        69.04%    failed      4.82%
+  53  BAT0736-k141_31743_Marker       0.00%    passed     34.11%
+  54  BAT0736-k141_4356_Marker       68.84%    passed     26.31%
+  55  BAT0736-k141_6047_Marker        0.00%    passed     63.01%
+  56  BAT0741-k141_21482_Marker       0.00%    passed     99.98%
+  57  BAT1552-k141_18231_Marker       0.00%    passed     65.58%
+  58  BAT1596-k141_109955_Marker     33.20%    passed     46.11%
+  59  BAT1597-k141_9307_Marker        0.00%    passed     77.44%
+  60  BAT1825-k141_2197_Marker        0.41%    passed     50.70%
+  61  RNALIV2211-k141_62870_Marker   29.33%    passed     96.03%
+  62  BAT2584-k141_815289_Marker     20.57%    passed     71.35%
+  63  BAT3000-k141_204917_Marker     73.52%    passed     70.02%
+  64  BAT3003-k141_213134_Marker      0.00%    passed     99.17%
+  65  UGR87-k141_328841_Marker        0.41%    passed     99.78%
+  66  BAT3503-k79_1160_Marker         0.00%    passed     98.69%
+  67  BAT255-k141_15655_Marker       16.90%    failed      0.00%
+  68  BAT273-k141_119236_Marker       0.00%    passed     87.17%
+  69  BAT399-k141_400674_Marker      26.68%    passed     82.45%
+  70  BAT630-k141_94457_Marker       37.47%    passed     79.13%
+  71  BAT0736-k141_3076_Marker       25.66%    passed     63.66%
+  72  BAT0738-k141_19611_Marker       0.00%    passed     96.88%
+  73  BAT1537-k141_139591_Marker     64.56%    passed     47.42%
+  74  BAT1537-k141_146819_Marker     17.11%    failed      0.00%
+  75  BAT1537-k141_170551_Marker      0.00%    passed     97.77%
+  76  BAT1549-k141_13886_Marker       0.00%    passed     96.46%
+  77  BAT1554-k141_22840_Marker       5.91%    passed     97.01%
+  78  BAT2584-k141_94572_Marker      56.01%    passed     89.75%
+  79  BAT2988-k141_98633_Marker       0.00%    passed     99.96%
+  80  BAT2996-k141_22551_Marker       0.00%    passed     98.69%
+  81  BAT2999-k141_16468_Marker       0.00%    passed     94.16%
+  82  KP404150.1_Marker               0.00%    passed     98.34%
+  83  MN882007.1_Marker               0.00%    passed     98.50%
+  84  KT946731.1_Marker               0.41%    passed     80.96%
+WARNING: 5 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           8.67%  8 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: KP404150.1_Marker is identical to AKB90506.1 but kept for subsequent analysis
+NOTE: KT946731.1_Marker is identical to APA19832.1 but kept for subsequent analysis
+NOTE: MN882007.1_Marker is identical to QOL71426.1 but kept for subsequent analysis
+NOTE: BAT2996-k141_22551_Marker is identical to BAT3503-k79_1160_Marker but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.030 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -35683.083
+Optimal log-likelihood: -35683.073
+Proportion of invariable sites: 0.018
+Gamma shape alpha: 0.962
+Parameters optimization took 1 rounds (0.074 sec)
+Time for fast ML tree search: 0.801 seconds
+
+NOTE: ModelFinder requires 68 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 491) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            37700.699    165 75731.399    75899.953    76423.812
+  2  LG+I          37510.549    166 75353.099    75524.222    76049.709
+  3  LG+G4         35690.190    166 71712.380    71883.503    72408.990
+  4  LG+I+G4       35683.074    167 71700.148    71873.869    72400.954
+  5  LG+R2         36069.870    167 72473.740    72647.462    73174.547
+  6  LG+R3         35756.697    169 71851.395    72030.398    72560.594

@@ -1,0 +1,412 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f08-3.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Astroviridae_nobastro_trimal.fa --prefix 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro --redo -T 16 --mem 80G --ufboot 1000 --boot-trees
+Seed:    959335 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Jul  9 14:40:29 2022
+Kernel:  AVX+FMA - 16 threads (32 CPU cores detected)
+
+Reading alignment file 3-trimAl/Astroviridae_nobastro_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 76 sequences with 496 columns, 478 distinct patterns
+387 parsimony-informative, 34 singleton sites, 75 constant sites
+                              Gap/Ambiguity  Composition  p-value
+   1  AJF45222.1                      1.41%    passed     99.55%
+   2  NP_059443.2                     0.00%    passed     97.56%
+   3  NP_059945.2                     0.00%    passed     98.74%
+   4  NP_620617.2                     2.42%    passed     99.66%
+   5  NP_795335.1                     0.00%    passed     87.17%
+   6  YP_002290967.1                  0.81%    passed     98.65%
+   7  YP_003090286.1                  0.00%    passed     76.19%
+   8  YP_003275951.1                  0.00%    passed     76.95%
+   9  YP_005271208.1                  0.20%    passed     84.26%
+  10  YP_006843891.1                  0.40%    passed     25.92%
+  11  YP_006905859.1                  0.00%    passed     97.29%
+  12  YP_006905856.1                  0.00%    passed     96.65%
+  13  YP_006905853.1                  0.81%    passed     89.75%
+  14  YP_007003830.1                  0.00%    passed     94.56%
+  15  YP_008519301.1                  0.00%    passed     99.66%
+  16  YP_009010946.1                  1.41%    passed     99.65%
+  17  YP_009010952.1                  1.41%    passed     97.13%
+  18  YP_009010968.1                  1.61%    passed     18.67%
+  19  YP_009010978.1                  1.41%    passed     95.01%
+  20  YP_009010981.1                  0.20%    passed     81.62%
+  21  YP_009047078.1                  0.00%    passed     96.01%
+  22  YP_009047246.1                  0.00%    passed     97.96%
+  23  YP_009052461.1                  2.02%    passed     86.91%
+  24  YP_009094053.1                  0.00%    passed     89.06%
+  25  YP_009094278.2                  0.00%    passed     98.86%
+  26  YP_009130648.1                  0.00%    passed     99.28%
+  27  YP_009154706.1                  3.63%    passed     75.48%
+  28  YP_009162617.1                  1.41%    passed     99.88%
+  29  YP_009275017.1                  0.00%    passed     99.06%
+  30  YP_009345898.1                  0.00%    passed     88.95%
+  31  YP_009345903.1                  0.00%    passed     62.74%
+  32  YP_009362294.1                  2.02%    passed     30.55%
+  33  YP_009380533.1                 35.69%    passed     82.22%
+  34  YP_009664775.1                  8.47%    passed     67.71%
+  35  YP_009664779.1                  0.00%    passed     87.27%
+  36  YP_009664783.1                  8.47%    passed     98.21%
+  37  YP_009664787.1                  0.00%    passed     93.96%
+  38  YP_009664790.1                  0.00%    passed     89.52%
+  39  ACF75856.1                      0.81%    passed     74.00%
+  40  AFI71936.1                      0.00%    passed     99.02%
+  41  AKB90506.1                      0.00%    passed     98.87%
+  42  APA19832.1                      0.20%    passed     53.60%
+  43  AWI14300.1                      0.00%    passed     92.33%
+  44  QOL71426.1                      0.00%    passed     99.00%
+  45  BAT0112-k79_1791_Marker        28.02%    passed     99.18%
+  46  UV32-k141_536798_Marker         0.00%    passed     97.40%
+  47  BAT0736-k141_31743_Marker       0.00%    passed     49.36%
+  48  BAT0736-k141_4356_Marker       68.95%    passed     16.38%
+  49  BAT0736-k141_6047_Marker        0.00%    passed     77.74%
+  50  BAT0741-k141_21482_Marker       0.20%    passed     99.98%
+  51  BAT1552-k141_18231_Marker       0.00%    passed     85.49%
+  52  BAT1596-k141_109955_Marker     33.67%    passed     53.36%
+  53  BAT1597-k141_9307_Marker        0.00%    passed     88.55%
+  54  BAT1825-k141_2197_Marker        0.40%    passed     27.02%
+  55  RNALIV2211-k141_62870_Marker   29.64%    passed     94.74%
+  56  BAT2584-k141_815289_Marker     20.77%    passed     79.31%
+  57  BAT3000-k141_204917_Marker     73.79%    passed     66.96%
+  58  BAT3003-k141_213134_Marker      0.00%    passed     99.92%
+  59  UGR87-k141_328841_Marker        0.40%    passed     99.35%
+  60  BAT3503-k79_1160_Marker         0.00%    passed     99.85%
+  61  BAT273-k141_119236_Marker       0.00%    passed     93.03%
+  62  BAT399-k141_400674_Marker      27.22%    passed     87.54%
+  63  BAT630-k141_94457_Marker       37.30%    passed     83.99%
+  64  BAT0736-k141_3076_Marker       25.81%    passed     74.89%
+  65  BAT0738-k141_19611_Marker       0.00%    passed     98.58%
+  66  BAT1537-k141_139591_Marker     64.92%    passed     32.32%
+  67  BAT1537-k141_170551_Marker      0.20%    passed     98.16%
+  68  BAT1549-k141_13886_Marker       0.20%    passed     97.50%
+  69  BAT1554-k141_22840_Marker       6.85%    passed     96.25%
+  70  BAT2584-k141_94572_Marker      55.85%    passed     95.00%
+  71  BAT2988-k141_98633_Marker       0.20%    passed     99.98%
+  72  BAT2996-k141_22551_Marker       0.00%    passed     99.85%
+  73  BAT2999-k141_16468_Marker       0.00%    passed     96.79%
+  74  KP404150.1_Marker               0.00%    passed     98.87%
+  75  MN882007.1_Marker               0.00%    passed     99.00%
+  76  KT946731.1_Marker               0.20%    passed     53.60%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           7.23%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: KP404150.1_Marker is identical to AKB90506.1 but kept for subsequent analysis
+NOTE: KT946731.1_Marker is identical to APA19832.1 but kept for subsequent analysis
+NOTE: MN882007.1_Marker is identical to QOL71426.1 but kept for subsequent analysis
+NOTE: BAT2996-k141_22551_Marker is identical to BAT3503-k79_1160_Marker but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.041 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -29754.813
+Optimal log-likelihood: -29753.898
+Proportion of invariable sites: 0.122
+Gamma shape alpha: 0.975
+Parameters optimization took 1 rounds (0.198 sec)
+Time for fast ML tree search: 1.486 seconds
+
+NOTE: ModelFinder requires 60 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 496) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            32059.517    149 64417.033    64546.224    65043.813
+  2  LG+I          31205.566    150 62711.132    62842.437    63342.119
+  3  LG+G4         29783.081    150 59866.163    59997.467    60497.149
+  4  LG+I+G4       29753.626    151 59809.252    59942.694    60444.445
+  5  LG+R2         30226.533    151 60755.065    60888.507    61390.258
+  6  LG+R3         29838.883    153 59983.766    60121.556    60627.372
+  7  LG+R4         29773.318    155 59856.636    59998.872    60508.656
+  8  LG+R5         29726.927    157 59767.855    59914.636    60428.287
+  9  LG+R6         29723.637    159 59765.274    59916.702    60434.119
+ 21  LG+F+R5       29697.451    176 59746.901    59942.212    60487.259
+ 22  LG+F+R6       29696.145    178 59748.291    59949.313    60497.061
+ 34  WAG+R5        29904.763    157 60123.526    60270.307    60783.958
+ 35  WAG+R6        29903.061    159 60124.122    60275.551    60792.968
+ 47  WAG+F+R5      29883.707    176 60119.413    60314.724    60859.771
+ 48  WAG+F+R6      29881.651    178 60119.302    60320.324    60868.072
+ 60  JTT+R5        30254.369    157 60822.737    60969.519    61483.170
+ 61  JTT+R6        30253.248    159 60824.496    60975.925    61493.342
+ 73  JTT+F+R5      30203.801    176 60759.602    60954.912    61499.959
+ 74  JTT+F+R6      30202.535    178 60761.071    60962.093    61509.841
+ 86  Q.pfam+R5     29752.278    157 59818.556    59965.337    60478.988
+ 87  Q.pfam+R6     29750.191    159 59818.382    59969.810    60487.227
+ 99  Q.pfam+F+R5   29694.339    176 59740.679    59935.989    60481.036
+100  Q.pfam+F+R6   29692.811    178 59741.622    59942.644    60490.392
+112  Q.bird+R5     31034.650    157 62383.300    62530.081    63043.732
+113  Q.bird+R6     31021.481    159 62360.962    62512.390    63029.807
+125  Q.bird+F+R5   30996.139    176 62344.279    62539.589    63084.636
+126  Q.bird+F+R6   30982.791    178 62321.582    62522.604    63070.353
+138  Q.mammal+R5   30703.516    157 61721.031    61867.812    62381.464
+139  Q.mammal+R6   30695.856    159 61709.712    61861.140    62378.557
+151  Q.mammal+F+R5 30682.387    176 61716.773    61912.083    62457.130
+152  Q.mammal+F+R6 30672.274    178 61700.547    61901.569    62449.318
+164  Q.insect+R5   29862.436    157 60038.873    60185.654    60699.305
+165  Q.insect+R6   29858.642    159 60035.285    60186.713    60704.130
+177  Q.insect+F+R5 29889.579    176 60131.158    60326.469    60871.516
+178  Q.insect+F+R6 29886.182    178 60128.365    60329.387    60877.135
+190  Q.plant+R5    30382.886    157 61079.771    61226.552    61740.204
+191  Q.plant+R6    30378.539    159 61075.079    61226.507    61743.924
+203  Q.plant+F+R5  30361.758    176 61075.515    61270.826    61815.873
+204  Q.plant+F+R6  30359.563    178 61075.126    61276.148    61823.896
+216  Q.yeast+R5    29861.734    157 60037.468    60184.249    60697.900
+217  Q.yeast+R6    29857.568    159 60033.137    60184.565    60701.982
+229  Q.yeast+F+R5  29738.899    176 59829.799    60025.109    60570.156
+230  Q.yeast+F+R6  29738.734    178 59833.467    60034.490    60582.238
+242  JTTDCMut+R5   30241.784    157 60797.568    60944.349    61458.000
+243  JTTDCMut+R6   30240.785    159 60799.569    60950.998    61468.415
+255  JTTDCMut+F+R5 30193.429    176 60738.858    60934.168    61479.216
+256  JTTDCMut+F+R6 30193.362    178 60742.724    60943.747    61491.495
+268  DCMut+R5      30440.721    157 61195.443    61342.224    61855.875
+269  DCMut+R6      30436.840    159 61191.679    61343.108    61860.525
+281  DCMut+F+R5    30298.935    176 60949.871    61145.181    61690.228
+282  DCMut+F+R6    30295.851    178 60947.702    61148.724    61696.473
+294  VT+R5         29943.743    157 60201.486    60348.267    60861.918
+295  VT+R6         29943.682    159 60205.364    60356.792    60874.209
+307  VT+F+R5       29930.757    176 60213.513    60408.824    60953.871
+308  VT+F+R6       29930.669    178 60217.338    60418.360    60966.109
+320  PMB+R5        30042.160    157 60398.321    60545.102    61058.753
+321  PMB+R6        30042.260    159 60402.521    60553.949    61071.366
+333  PMB+F+R5      30129.079    176 60610.159    60805.469    61350.516
+334  PMB+F+R6      30129.055    178 60614.111    60815.133    61362.881
+346  Blosum62+R5   29992.388    157 60298.775    60445.556    60959.208
+347  Blosum62+R6   29992.849    159 60303.699    60455.128    60972.545
+359  Blosum62+F+R5 30039.666    176 60431.333    60626.643    61171.690
+360  Blosum62+F+R6 30039.639    178 60435.277    60636.299    61184.048
+372  Dayhoff+R5    30440.122    157 61194.244    61341.025    61854.676
+373  Dayhoff+R6    30436.382    159 61190.764    61342.193    61859.610
+385  Dayhoff+F+R5  30298.597    176 60949.194    61144.504    61689.551
+386  Dayhoff+F+R6  30295.347    178 60946.695    61147.717    61695.465
+398  mtREV+R5      31858.732    157 64031.463    64178.244    64691.895
+399  mtREV+R6      31844.212    159 64006.423    64157.852    64675.269
+411  mtREV+F+R5    30627.228    176 61606.456    61801.767    62346.814
+412  mtREV+F+R6    30625.480    178 61606.960    61807.982    62355.731
+424  mtART+R5      31973.132    157 64260.265    64407.046    64920.697
+425  mtART+R6      31951.919    159 64221.838    64373.267    64890.684
+437  mtART+F+R5    30798.413    176 61948.826    62144.137    62689.184
+438  mtART+F+R6    30784.055    178 61924.109    62125.131    62672.880
+450  mtZOA+R5      31155.525    157 62625.050    62771.831    63285.482
+451  mtZOA+R6      31144.670    159 62607.341    62758.770    63276.187
+463  mtZOA+F+R5    30316.025    176 60984.050    61179.360    61724.407
+464  mtZOA+F+R6    30311.052    178 60978.103    61179.125    61726.874
+476  mtMet+R5      31682.023    157 63678.045    63824.826    64338.478
+477  mtMet+R6      31673.331    159 63664.663    63816.092    64333.509
+489  mtMet+F+R5    30546.465    176 61444.931    61640.241    62185.288
+490  mtMet+F+R6    30542.889    178 61441.778    61642.800    62190.548
+502  mtVer+R5      32291.145    157 64896.290    65043.072    65556.723
+503  mtVer+R6      32275.803    159 64869.606    65021.035    65538.452
+515  mtVer+F+R5    31175.622    176 62703.244    62898.555    63443.602
+516  mtVer+F+R6    31172.376    178 62700.753    62901.775    63449.523
+528  mtInv+R5      31640.855    157 63595.710    63742.492    64256.143
+529  mtInv+R6      31638.239    159 63594.478    63745.907    64263.324
+541  mtInv+F+R5    30280.159    176 60912.319    61107.629    61652.676
+542  mtInv+F+R6    30276.961    178 60909.921    61110.943    61658.692
+554  mtMAM+R5      32654.121    157 65622.242    65769.023    66282.675
+555  mtMAM+R6      32627.137    159 65572.274    65723.702    66241.119
+567  mtMAM+F+R5    31450.591    176 63253.182    63448.492    63993.539
+568  mtMAM+F+R6    31445.373    178 63246.746    63447.768    63995.516
+580  HIVb+R5       31172.508    157 62659.016    62805.797    63319.448
+581  HIVb+R6       31161.795    159 62641.589    62793.018    63310.435
+593  HIVb+F+R5     31098.729    176 62549.458    62744.769    63289.816
+594  HIVb+F+R6     31087.544    178 62531.088    62732.110    63279.858
+606  HIVw+R5       32956.315    157 66226.630    66373.411    66887.063
+607  HIVw+R6       32954.091    159 66226.182    66377.610    66895.027
+619  HIVw+F+R5     32381.547    176 65115.093    65310.403    65855.450
+620  HIVw+F+R6     32362.481    178 65080.961    65281.983    65829.732
+632  FLU+R5        30993.206    157 62300.412    62447.193    62960.844
+633  FLU+R6        30990.758    159 62299.516    62450.945    62968.362
+645  FLU+F+R5      30862.748    176 62077.496    62272.806    62817.853
+646  FLU+F+R6      30852.708    178 62061.416    62262.438    62810.187
+658  rtREV+R5      29969.269    157 60252.538    60399.319    60912.971
+659  rtREV+R6      29967.834    159 60253.667    60405.096    60922.513
+671  rtREV+F+R5    29775.203    176 59902.405    60097.715    60642.762
+672  rtREV+F+R6    29773.224    178 59902.448    60103.470    60651.219
+684  cpREV+R5      30193.298    157 60700.596    60847.377    61361.028
+685  cpREV+R6      30190.027    159 60698.053    60849.482    61366.899
+697  cpREV+F+R5    30123.794    176 60599.588    60794.898    61339.945
+698  cpREV+F+R6    30122.684    178 60601.368    60802.390    61350.138
+Akaike Information Criterion:           Q.pfam+F+R5
+Corrected Akaike Information Criterion: LG+R5
+Bayesian Information Criterion:         LG+R5
+Best-fit model: LG+R5 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.model.gz
+CPU time for ModelFinder: 24747.904 seconds (6h:52m:27s)
+Wall-clock time for ModelFinder: 1595.349 seconds (0h:26m:35s)
+Generating 1000 samples for ultrafast bootstrap (seed: 959335)...
+
+NOTE: 31 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -29726.927
+2. Current log-likelihood: -29726.767
+3. Current log-likelihood: -29726.637
+4. Current log-likelihood: -29726.500
+5. Current log-likelihood: -29726.364
+6. Current log-likelihood: -29726.232
+7. Current log-likelihood: -29726.104
+8. Current log-likelihood: -29725.980
+9. Current log-likelihood: -29725.860
+10. Current log-likelihood: -29725.742
+11. Current log-likelihood: -29725.628
+12. Current log-likelihood: -29725.519
+13. Current log-likelihood: -29725.415
+Optimal log-likelihood: -29725.254
+Site proportion and rates:  (0.245,0.045) (0.187,0.318) (0.274,0.882) (0.231,1.984) (0.063,3.662)
+Parameters optimization took 13 rounds (3.401 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.075945 sec (of wall-clock time) 1.198528 sec(of CPU time)
+Computing RapidNJ tree took 0.015590 sec (of wall-clock time) 0.233100 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -29860.308
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.204 second
+Computing log-likelihood of 98 initial trees ... 3.162 seconds
+Current best score: -29725.254
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -29723.981
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -29712.225
+Iteration 10 / LogL: -29730.818 / Time: 0h:0m:15s
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29712.001
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29711.861
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29711.731
+Iteration 20 / LogL: -29711.731 / Time: 0h:0m:22s
+Finish initializing candidate tree set (14)
+Current best tree score: -29711.731 / CPU time: 19.159
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -29711.279
+Iteration 30 / LogL: -29712.534 / Time: 0h:0m:29s (0h:1m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -29710.637
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29710.543
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29710.453
+Iteration 40 / LogL: -29710.629 / Time: 0h:0m:37s (0h:1m:27s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29710.368
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -29709.666
+Iteration 50 / LogL: -29709.855 / Time: 0h:0m:44s (0h:1m:29s left)
+Log-likelihood cutoff on original alignment: -29762.220
+UFBoot trees printed to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.ufboot
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 56: -29709.062
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -29708.990
+UPDATE BEST LOG-LIKELIHOOD: -29708.987
+Iteration 60 / LogL: -29709.163 / Time: 0h:0m:52s (0h:1m:24s left)
+UPDATE BEST LOG-LIKELIHOOD: -29708.984
+Iteration 70 / LogL: -29711.109 / Time: 0h:0m:59s (0h:1m:13s left)
+Iteration 80 / LogL: -29710.791 / Time: 0h:1m:6s (0h:1m:3s left)
+Iteration 90 / LogL: -29709.632 / Time: 0h:1m:13s (0h:0m:54s left)
+Iteration 100 / LogL: -29711.343 / Time: 0h:1m:19s (0h:0m:45s left)
+Log-likelihood cutoff on original alignment: -29762.220
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+UFBoot trees printed to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.ufboot
+Iteration 110 / LogL: -29710.253 / Time: 0h:1m:27s (0h:1m:11s left)
+Iteration 120 / LogL: -29710.610 / Time: 0h:1m:34s (0h:1m:3s left)
+UPDATE BEST LOG-LIKELIHOOD: -29708.979
+Iteration 130 / LogL: -29710.474 / Time: 0h:1m:41s (0h:0m:54s left)
+Iteration 140 / LogL: -29708.979 / Time: 0h:1m:48s (0h:0m:46s left)
+Iteration 150 / LogL: -29709.492 / Time: 0h:1m:54s (0h:0m:38s left)
+Log-likelihood cutoff on original alignment: -29762.220
+UFBoot trees printed to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.ufboot
+TREE SEARCH COMPLETED AFTER 157 ITERATIONS / Time: 0h:1m:59s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -29708.979
+2. Current log-likelihood: -29708.935
+3. Current log-likelihood: -29708.883
+4. Current log-likelihood: -29708.831
+5. Current log-likelihood: -29708.781
+6. Current log-likelihood: -29708.733
+7. Current log-likelihood: -29708.686
+8. Current log-likelihood: -29708.641
+9. Current log-likelihood: -29708.598
+10. Current log-likelihood: -29708.557
+11. Current log-likelihood: -29708.517
+12. Current log-likelihood: -29708.480
+13. Current log-likelihood: -29708.444
+14. Current log-likelihood: -29708.408
+15. Current log-likelihood: -29708.373
+16. Current log-likelihood: -29708.340
+17. Current log-likelihood: -29708.308
+18. Current log-likelihood: -29708.278
+19. Current log-likelihood: -29708.247
+20. Current log-likelihood: -29708.230
+21. Current log-likelihood: -29708.202
+22. Current log-likelihood: -29708.186
+23. Current log-likelihood: -29708.169
+24. Current log-likelihood: -29708.142
+25. Current log-likelihood: -29708.126
+26. Current log-likelihood: -29708.110
+27. Current log-likelihood: -29708.094
+28. Current log-likelihood: -29708.081
+29. Current log-likelihood: -29708.066
+30. Current log-likelihood: -29708.052
+31. Current log-likelihood: -29708.037
+32. Current log-likelihood: -29708.023
+33. Current log-likelihood: -29708.009
+34. Current log-likelihood: -29707.994
+35. Current log-likelihood: -29707.981
+36. Current log-likelihood: -29707.968
+37. Current log-likelihood: -29707.956
+38. Current log-likelihood: -29707.943
+39. Current log-likelihood: -29707.932
+40. Current log-likelihood: -29707.920
+41. Current log-likelihood: -29707.908
+42. Current log-likelihood: -29707.896
+43. Current log-likelihood: -29707.886
+44. Current log-likelihood: -29707.874
+45. Current log-likelihood: -29707.863
+Optimal log-likelihood: -29707.848
+Site proportion and rates:  (0.231,0.034) (0.193,0.295) (0.283,0.872) (0.232,1.999) (0.060,3.730)
+Parameters optimization took 45 rounds (11.423 sec)
+BEST SCORE FOUND : -29707.848
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.splits.nex
+Total tree length: 20.875
+
+Total number of iterations: 157
+CPU time used for tree search: 1798.503 sec (0h:29m:58s)
+Wall-clock time used for tree search: 116.097 sec (0h:1m:56s)
+Total CPU time used: 2042.215 sec (0h:34m:2s)
+Total wall-clock time used: 131.573 sec (0h:2m:11s)
+UFBoot trees printed to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.splits.nex...
+76 taxa and 306 splits.
+Consensus tree written to 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.contree
+Reading input trees file 6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.contree
+Log-likelihood of consensus tree: -29709.201
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.treefile
+  Likelihood distances:          6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.splits.nex
+  Consensus tree:                6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.contree
+  UFBoot trees:                  6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.ufboot
+  Screen log file:               6-PhylogenyTree/Astroviridae_nobastro_tree/Astroviridae_nobastro.log
+
+Date and Time: Sat Jul  9 15:09:17 2022

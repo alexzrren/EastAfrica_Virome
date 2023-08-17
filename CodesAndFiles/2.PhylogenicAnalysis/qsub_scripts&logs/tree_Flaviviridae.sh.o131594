@@ -1,0 +1,256 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f08-4.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Flaviviridae_trimal.fa --prefix 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae --redo -T 6 --mem 48G --ufboot 1000 --boot-trees
+Seed:    255564 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  8 03:50:01 2022
+Kernel:  AVX+FMA - 6 threads (64 CPU cores detected)
+
+Reading alignment file 3-trimAl/Flaviviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 62 sequences with 1841 columns, 1838 distinct patterns
+1782 parsimony-informative, 45 singleton sites, 14 constant sites
+                              Gap/Ambiguity  Composition  p-value
+   1  AAD31543.1                      0.92%    failed      0.01%
+   2  AGJ71779.1                      0.65%    passed     12.16%
+   3  AGJ71780.1                      0.22%    failed      0.00%
+   4  NP_056931.1                     1.25%    passed     15.51%
+   5  NP_620062.1                     4.40%    failed      0.00%
+   6  YP_001008348.1                  1.20%    failed      0.00%
+   7  YP_001469633.1                  0.81%    passed      8.01%
+   8  YP_007697649.1                  1.20%    failed      0.00%
+   9  YP_008992092.1                  4.18%    failed      0.00%
+  10  YP_009001464.1                  1.30%    failed      0.00%
+  11  YP_009026410.1                  1.47%    failed      0.15%
+  12  YP_009028573.1                  5.21%    failed      0.00%
+  13  YP_009029999.1                 62.90%    failed      0.00%
+  14  YP_009041466.1                  2.44%    failed      0.60%
+  15  YP_009044207.1                  0.76%    failed      0.00%
+  16  YP_009056847.1                  0.98%    failed      0.03%
+  17  YP_009056848.1                  1.41%    failed      0.06%
+  18  YP_009109557.1                  0.43%    passed     13.99%
+  19  YP_009109558.1                  0.81%    passed     33.24%
+  20  YP_009109602.1                  0.27%    failed      0.00%
+  21  YP_009130616.1                  1.14%    passed     73.70%
+  22  YP_009227295.1                  1.63%    failed      0.00%
+  23  YP_009175071.1                  6.03%    failed      0.00%
+  24  YP_009179227.1                  2.17%    failed      4.09%
+  25  YP_009256193.1                  2.61%    failed      0.14%
+  26  YP_009256194.1                  0.49%    failed      0.00%
+  27  YP_009259488.1                  2.06%    failed      0.01%
+  28  YP_009305197.1                  1.63%    failed      0.71%
+  29  YP_009322132.1                  0.22%    passed     15.60%
+  30  YP_009325330.1                  0.49%    passed     15.02%
+  31  YP_009325369.1                  0.76%    passed     67.99%
+  32  YP_009345036.1                  1.90%    failed      0.00%
+  33  YP_009350102.1                  2.55%    failed      0.01%
+  34  YP_009351861.1                  2.55%    failed      0.00%
+  35  YP_009361867.1                  0.98%    failed      0.00%
+  36  YP_009388303.1                  6.90%    failed      0.00%
+  37  YP_009388577.1                  1.58%    failed      0.75%
+  38  YP_009389296.1                  1.74%    passed      6.61%
+  39  YP_009506356.1                  0.98%    passed      8.97%
+  40  YP_009506358.1                  0.60%    passed     33.79%
+  41  YP_009506359.1                  0.98%    failed      4.99%
+  42  YP_009506360.1                  1.14%    passed     27.76%
+  43  YP_009506361.1                  0.38%    passed     19.26%
+  44  YP_009506364.1                  0.81%    failed      0.00%
+  45  YP_009506365.1                  0.27%    failed      0.43%
+  46  YP_009506366.1                  0.27%    failed      0.44%
+  47  YP_009506368.1                  0.54%    failed      0.77%
+  48  YP_009551951.1                  6.57%    failed      0.00%
+  49  YP_009552082.1                 17.16%    failed      0.00%
+  50  YP_009552767.1                  2.12%    failed      0.63%
+  51  YP_009553586.1                  0.65%    passed     61.62%
+  52  QNS27181.1                      1.09%    passed     77.77%
+  53  RNALIV2277-k141_3561_Marker    12.00%    passed     86.46%
+  54  RNALIV2277-k141_54693_Marker    9.78%    passed     92.04%
+  55  BAT2223-k141_49374_Marker      33.30%    failed      0.00%
+  56  911-k141_316744_Marker         49.81%    failed      0.04%
+  57  913-k141_456469_Marker         76.26%    failed      3.74%
+  58  945-k141_359293_Marker         72.03%    passed     42.66%
+  59  19BR184KID-k119_12303_Marker    0.87%    passed     23.86%
+  60  RNALIV2005-k141_13395_Marker   63.17%    failed      1.42%
+  61  19BR183-k141_61310_Marker      15.48%    passed     79.76%
+  62  912-k141_160989_Marker          0.33%    passed     25.05%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           8.01%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.041 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -178651.699
+Optimal log-likelihood: -178651.685
+Proportion of invariable sites: 0.007
+Gamma shape alpha: 1.652
+Parameters optimization took 1 rounds (0.266 sec)
+Time for fast ML tree search: 2.802 seconds
+
+NOTE: ModelFinder requires 185 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 1841) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            183434.951   121 367111.902   367129.077   367779.587
+  2  LG+I          183037.115   122 366318.230   366335.700   366991.434
+  3  LG+G4         178724.287   122 357692.574   357710.043   358365.777
+  4  LG+I+G4       178651.693   123 357549.386   357567.152   358228.108
+  5  LG+R2         179502.574   123 359251.147   359268.913   359929.869
+  6  LG+R3         178735.517   125 357721.034   357739.402   358410.792
+  7  LG+R4         178476.448   127 357206.897   357225.876   357907.691
+  8  LG+R5         178421.643   129 357101.286   357120.888   357813.116
+  9  LG+R6         178396.636   131 357055.271   357075.508   357778.138
+ 10  LG+R7         178395.584   133 357057.169   357078.050   357791.071
+ 22  LG+F+R6       177866.965   150 356033.931   356060.736   356861.640
+ 35  WAG+R6        178987.627   131 358237.254   358257.491   358960.121
+ 48  WAG+F+R6      178270.617   150 356841.233   356868.038   357668.943
+ 61  JTT+R6        180869.526   131 362001.053   362021.289   362723.919
+ 74  JTT+F+R6      180625.900   150 361551.800   361578.605   362379.510
+ 87  Q.pfam+R6     178139.003   131 356540.007   356560.243   357262.873
+100  Q.pfam+F+R6   177877.683   150 356055.366   356082.170   356883.075
+113  Q.bird+R6     184833.509   131 369929.018   369949.255   370651.885
+126  Q.bird+F+R6   185123.559   150 370547.118   370573.923   371374.828
+139  Q.mammal+R6   183303.757   131 366869.515   366889.751   367592.381
+152  Q.mammal+F+R6 183393.862   150 367087.724   367114.529   367915.434
+165  Q.insect+R6   179972.773   131 360207.546   360227.782   360930.412
+178  Q.insect+F+R6 179377.197   150 359054.395   359081.200   359882.104
+191  Q.plant+R6    181862.160   131 363986.320   364006.557   364709.187
+204  Q.plant+F+R6  181554.768   150 363409.536   363436.341   364237.246
+217  Q.yeast+R6    180311.638   131 360885.275   360905.512   361608.142
+230  Q.yeast+F+R6  178774.334   150 357848.668   357875.473   358676.378
+243  JTTDCMut+R6   180851.234   131 361964.469   361984.705   362687.335
+256  JTTDCMut+F+R6 180587.745   150 361475.491   361502.295   362303.200
+269  DCMut+R6      182107.809   131 364477.618   364497.855   365200.485
+282  DCMut+F+R6    180853.561   150 362007.123   362033.927   362834.832
+295  VT+R6         179001.811   131 358265.623   358285.859   358988.489
+308  VT+F+R6       178374.917   150 357049.835   357076.639   357877.544
+321  PMB+R6        178609.732   131 357481.463   357501.700   358204.330
+334  PMB+F+R6      178449.004   150 357198.009   357224.814   358025.718
+347  Blosum62+R6   178748.402   131 357758.803   357779.040   358481.670
+360  Blosum62+F+R6 178328.156   150 356956.313   356983.118   357784.023
+373  Dayhoff+R6    182115.183   131 364492.367   364512.603   365215.233
+386  Dayhoff+F+R6  180861.950   150 362023.900   362050.705   362851.610
+399  mtREV+R6      189595.650   131 379453.301   379473.537   380176.167
+412  mtREV+F+R6    182535.730   150 365371.460   365398.265   366199.170
+425  mtART+R6      191215.344   131 382692.688   382712.924   383415.554
+438  mtART+F+R6    184392.393   150 369084.786   369111.591   369912.495
+451  mtZOA+R6      186191.503   131 372645.007   372665.243   373367.873
+464  mtZOA+F+R6    182020.836   150 364341.673   364368.477   365169.382
+477  mtMet+R6      189914.170   131 380090.341   380110.577   380813.207
+490  mtMet+F+R6    182999.081   150 366298.163   366324.968   367125.873
+503  mtVer+R6      192550.996   131 385363.992   385384.228   386086.858
+516  mtVer+F+R6    185914.130   150 372128.260   372155.065   372955.970
+529  mtInv+R6      189968.059   131 380198.119   380218.355   380920.985
+542  mtInv+F+R6    181084.094   150 362468.187   362494.992   363295.897
+555  mtMAM+R6      195078.990   131 390419.980   390440.216   391142.846
+568  mtMAM+F+R6    187561.861   150 375423.721   375450.526   376251.431
+581  HIVb+R6       185589.440   131 371440.881   371461.117   372163.747
+594  HIVb+F+R6     184671.018   150 369642.036   369668.841   370469.745
+607  HIVw+R6       195352.143   131 390966.285   390986.522   391689.152
+620  HIVw+F+R6     190566.749   150 381433.499   381460.303   382261.208
+633  FLU+R6        185601.600   131 371465.200   371485.437   372188.067
+646  FLU+F+R6      183207.659   150 366715.319   366742.123   367543.028
+659  rtREV+R6      179797.291   131 359856.582   359876.819   360579.449
+672  rtREV+F+R6    178204.254   150 356708.508   356735.313   357536.218
+685  cpREV+R6      180849.477   131 361960.955   361981.191   362683.821
+698  cpREV+F+R6    179658.828   150 359617.656   359644.461   360445.366
+Akaike Information Criterion:           LG+F+R6
+Corrected Akaike Information Criterion: LG+F+R6
+Bayesian Information Criterion:         LG+F+R6
+Best-fit model: LG+F+R6 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.model.gz
+CPU time for ModelFinder: 5236.390 seconds (1h:27m:16s)
+Wall-clock time for ModelFinder: 883.727 seconds (0h:14m:43s)
+Generating 1000 samples for ultrafast bootstrap (seed: 255564)...
+
+NOTE: 114 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -177866.965
+Optimal log-likelihood: -177866.946
+Site proportion and rates:  (0.027,0.030) (0.063,0.157) (0.170,0.385) (0.286,0.779) (0.331,1.321) (0.122,2.157)
+Parameters optimization took 1 rounds (1.220 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.223759 sec (of wall-clock time) 1.321564 sec(of CPU time)
+Computing RapidNJ tree took 0.002264 sec (of wall-clock time) 0.013518 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -177985.627
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 8.436 second
+Computing log-likelihood of 98 initial trees ... 17.228 seconds
+Current best score: -177866.946
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -177865.530
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -177858.878
+Iteration 10 / LogL: -177866.028 / Time: 0h:1m:1s
+Iteration 20 / LogL: -177868.977 / Time: 0h:1m:32s
+Finish initializing candidate tree set (5)
+Current best tree score: -177858.878 / CPU time: 89.188
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -177864.006 / Time: 0h:2m:12s (0h:5m:46s left)
+Iteration 40 / LogL: -177860.986 / Time: 0h:2m:46s (0h:4m:42s left)
+Iteration 50 / LogL: -177864.589 / Time: 0h:3m:31s (0h:4m:1s left)
+Log-likelihood cutoff on original alignment: -177910.167
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+Iteration 60 / LogL: -177865.502 / Time: 0h:4m:13s (0h:3m:17s left)
+UPDATE BEST LOG-LIKELIHOOD: -177858.872
+Iteration 70 / LogL: -177859.145 / Time: 0h:4m:58s (0h:2m:35s left)
+Iteration 80 / LogL: -177859.341 / Time: 0h:5m:39s (0h:1m:51s left)
+Iteration 90 / LogL: -177858.985 / Time: 0h:6m:22s (0h:1m:8s left)
+Iteration 100 / LogL: -177860.814 / Time: 0h:7m:4s (0h:0m:25s left)
+Log-likelihood cutoff on original alignment: -177910.167
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+TREE SEARCH COMPLETED AFTER 107 ITERATIONS / Time: 0h:7m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -177858.872
+2. Current log-likelihood: -177858.860
+Optimal log-likelihood: -177858.856
+Site proportion and rates:  (0.027,0.030) (0.062,0.155) (0.169,0.380) (0.277,0.768) (0.336,1.302) (0.129,2.133)
+Parameters optimization took 2 rounds (2.973 sec)
+BEST SCORE FOUND : -177858.856
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex
+Total tree length: 49.112
+
+Total number of iterations: 107
+CPU time used for tree search: 2620.755 sec (0h:43m:40s)
+Wall-clock time used for tree search: 442.731 sec (0h:7m:22s)
+Total CPU time used: 2656.652 sec (0h:44m:16s)
+Total wall-clock time used: 448.793 sec (0h:7m:28s)
+UFBoot trees printed to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex...
+62 taxa and 203 splits.
+Consensus tree written to 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+Reading input trees file 6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+Log-likelihood of consensus tree: -177858.871
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.treefile
+  Likelihood distances:          6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.splits.nex
+  Consensus tree:                6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.contree
+  UFBoot trees:                  6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.ufboot
+  Screen log file:               6-PhylogenyTree/Flaviviridae_tree/Flaviviridae.log
+
+Date and Time: Fri Jul  8 04:12:16 2022

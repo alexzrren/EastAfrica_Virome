@@ -1,0 +1,362 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f07-2.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Paramyxoviridae_trimal.fa --prefix 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae --redo -T 6 --mem 48G --ufboot 1000 --boot-trees
+Seed:    237824 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  8 04:11:06 2022
+Kernel:  AVX+FMA - 6 threads (12 CPU cores detected)
+
+Reading alignment file 3-trimAl/Paramyxoviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 64 sequences with 2126 columns, 2041 distinct patterns
+1897 parsimony-informative, 53 singleton sites, 176 constant sites
+                              Gap/Ambiguity  Composition  p-value
+   1  AAL89409.1                      0.00%    passed     27.27%
+   2  ACA24946.1                      0.00%    passed     21.07%
+   3  ACF59817.1                      0.00%    failed      0.34%
+   4  AEP40405.1                      0.14%    passed     48.26%
+   5  NP_056879.1                     0.00%    passed     29.10%
+   6  NP_067153.2                     0.00%    passed      6.71%
+   7  NP_047113.3                     0.19%    passed     72.07%
+   8  NP_047207.1                     0.14%    passed     44.04%
+   9  NP_037646.1                     0.00%    passed     24.79%
+  10  NP_054697.1                     0.00%    passed     48.83%
+  11  NP_054714.1                     0.00%    passed     11.29%
+  12  NP_112028.1                     0.19%    passed     62.83%
+  13  NP_598406.1                     0.09%    passed      9.81%
+  14  NP_665871.1                     0.00%    passed      5.13%
+  15  NP_872278.1                     0.52%    passed     15.27%
+  16  NP_899661.1                     0.61%    passed      6.40%
+  17  NP_945030.1                     0.14%    passed     76.97%
+  18  NP_958055.1                     0.00%    passed     10.64%
+  19  YP_087126.2                     0.14%    passed     32.95%
+  20  YP_133828.1                     0.14%    passed     13.27%
+  21  YP_138510.1                     0.00%    passed     35.04%
+  22  YP_138518.1                     0.05%    passed     12.16%
+  23  YP_338085.1                     0.00%    passed     45.33%
+  24  YP_001249278.1                  0.00%    failed      1.11%
+  25  YP_001331035.1                  0.14%    failed      0.00%
+  26  YP_006347589.1                  0.14%    passed     14.31%
+  27  YP_007008152.1                  1.27%    failed      0.01%
+  28  YP_009091839.1                  0.19%    passed     39.97%
+  29  YP_009094073.2                  0.00%    failed      3.75%
+  30  YP_009094087.1                  0.33%    passed      6.95%
+  31  YP_009094096.1                  0.05%    passed     77.14%
+  32  YP_009094120.1                  0.00%    passed     69.64%
+  33  YP_009094152.1                  0.00%    failed      0.00%
+  34  YP_009094173.1                  0.66%    passed     38.96%
+  35  YP_009094217.1                  1.55%    failed      0.01%
+  36  YP_009094339.1                  0.24%    passed      9.22%
+  37  YP_009094364.1                  0.52%    failed      0.35%
+  38  YP_009094450.1                  0.00%    passed     33.55%
+  39  YP_009094466.1                  0.00%    failed      2.01%
+  40  YP_009177604.1                  0.14%    passed     74.12%
+  41  YP_009179212.1                  0.00%    passed     32.55%
+  42  YP_009505447.1                  0.00%    passed     22.88%
+  43  YP_009512956.1                  0.00%    passed     53.20%
+  44  YP_009512964.1                  0.05%    passed     74.41%
+  45  YP_009666847.1                  0.00%    passed     21.14%
+  46  YP_009666855.1                  0.00%    passed     40.03%
+  47  ATP66853.1                      0.00%    passed     68.65%
+  48  AVM86048.1                      0.00%    passed     32.06%
+  49  QIM73995.1                      0.00%    passed     69.25%
+  50  QOC67917.1                      0.00%    passed     93.49%
+  51  19BR163KID-k99_18062_Marker     0.00%    passed     35.82%
+  52  19BR184KID-k119_9215_Marker     0.00%    passed     21.38%
+  53  19BR181KID-k99_6171_Marker      0.00%    passed     78.37%
+  54  19BR182KID-k99_3453_Marker      6.87%    passed     12.33%
+  55  BAT1838-k141_705087_Marker     77.28%    passed     45.75%
+  56  RNAKID2276-k141_22546_Marker    0.00%    passed     72.82%
+  57  19BR163KID-k99_10903_Marker     0.05%    passed     76.81%
+  58  BAT262-k141_50525_Marker       59.55%    passed     35.61%
+  59  BAT271-k141_102511_Marker      81.89%    passed     71.44%
+  60  BAT271-k141_42001_Marker       77.85%    passed     38.67%
+  61  BAT631-k141_83192_Marker       84.15%    passed     71.46%
+  62  BAT0812-k141_383427_Marker      0.05%    failed      0.00%
+  63  RNAKID2229-k141_36642_Marker   61.19%    failed      3.01%
+  64  MT085491.1_Marker               0.00%    passed     93.49%
+WARNING: 6 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                           7.13%  11 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: MT085491.1_Marker is identical to QOC67917.1 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.075 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -146624.726
+Optimal log-likelihood: -146624.586
+Proportion of invariable sites: 0.071
+Gamma shape alpha: 0.950
+Parameters optimization took 1 rounds (0.536 sec)
+Time for fast ML tree search: 4.532 seconds
+
+NOTE: ModelFinder requires 211 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 2126) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            156952.682   125 314155.364   314171.114   314863.113
+  2  LG+I          154592.493   126 309436.987   309452.997   310150.398
+  3  LG+G4         146765.508   126 293783.016   293799.026   294496.428
+  4  LG+I+G4       146624.796   127 293503.593   293519.865   294222.666
+  5  LG+R2         148838.704   127 297931.407   297947.680   298650.481
+  6  LG+R3         147177.678   129 294613.357   294630.160   295343.754
+  7  LG+R4         146690.350   131 293642.699   293660.043   294384.421
+  8  LG+R5         146518.970   133 293303.940   293321.834   294056.986
+  9  LG+R6         146471.585   135 293213.170   293231.623   293977.540
+ 10  LG+R7         146457.262   137 293188.524   293207.544   293964.218
+ 11  LG+R8         146457.094   139 293192.189   293211.786   293979.206
+ 23  LG+F+R7       145654.487   156 291620.975   291645.852   292504.246
+ 36  WAG+R7        147875.207   137 296024.414   296043.434   296800.107
+ 49  WAG+F+R7      146766.650   156 293845.299   293870.177   294728.571
+ 62  JTT+R7        148225.742   137 296725.484   296744.504   297501.178
+ 75  JTT+F+R7      147171.319   156 294654.638   294679.515   295537.909
+ 88  Q.pfam+R7     146664.095   137 293602.190   293621.210   294377.884
+101  Q.pfam+F+R7   145775.733   156 291863.466   291888.343   292746.737
+114  Q.bird+R7     150970.144   137 302214.287   302233.307   302989.981
+127  Q.bird+F+R7   149913.617   156 300139.233   300164.111   301022.505
+140  Q.mammal+R7   149846.147   137 299966.294   299985.314   300741.988
+153  Q.mammal+F+R7 148798.989   156 297909.978   297934.856   298793.250
+166  Q.insect+R7   146035.910   137 292345.821   292364.841   293121.514
+179  Q.insect+F+R7 145852.745   156 292017.490   292042.368   292900.762
+192  Q.plant+R7    147900.600   137 296075.200   296094.220   296850.894
+205  Q.plant+F+R7  147271.894   156 294855.787   294880.665   295739.059
+218  Q.yeast+R7    145919.766   137 292113.533   292132.553   292889.227
+231  Q.yeast+F+R7  145479.972   156 291271.944   291296.821   292155.215
+244  JTTDCMut+R7   148215.826   137 296705.651   296724.671   297481.345
+257  JTTDCMut+F+R7 147151.593   156 294615.186   294640.063   295498.457
+270  DCMut+R7      149692.963   137 299659.925   299678.945   300435.619
+283  DCMut+F+R7    147788.668   156 295889.335   295914.213   296772.607
+296  VT+R7         147597.211   137 295468.422   295487.443   296244.116
+309  VT+F+R7       146844.018   156 294000.036   294024.914   294883.308
+322  PMB+R7        148272.139   137 296818.278   296837.298   297593.972
+335  PMB+F+R7      147678.082   156 295668.164   295693.042   296551.436
+348  Blosum62+R7   148117.728   137 296509.457   296528.477   297285.150
+361  Blosum62+F+R7 147428.352   156 295168.705   295193.582   296051.976
+374  Dayhoff+R7    149691.545   137 299657.090   299676.110   300432.784
+387  Dayhoff+F+R7  147787.064   156 295886.128   295911.006   296769.400
+400  mtREV+R7      153025.561   137 306325.123   306344.143   307100.816
+413  mtREV+F+R7    148704.730   156 297721.461   297746.339   298604.733
+426  mtART+R7      152985.495   137 306244.991   306264.011   307020.684
+439  mtART+F+R7    148357.925   156 297027.851   297052.728   297911.122
+452  mtZOA+R7      150648.018   137 301570.036   301589.056   302345.730
+465  mtZOA+F+R7    147125.244   156 294562.488   294587.366   295445.760
+478  mtMet+R7      152432.416   137 305138.831   305157.851   305914.525
+491  mtMet+F+R7    148249.104   156 296810.208   296835.085   297693.479
+504  mtVer+R7      154759.898   137 309793.797   309812.817   310569.490
+517  mtVer+F+R7    150752.307   156 301816.615   301841.492   302699.886
+530  mtInv+R7      152654.878   137 305583.756   305602.776   306359.449
+543  mtInv+F+R7    147155.145   156 294622.290   294647.168   295505.562
+556  mtMAM+R7      155891.136   137 312056.273   312075.293   312831.967
+569  mtMAM+F+R7    151413.428   156 303138.856   303163.734   304022.128
+582  HIVb+R7       150886.683   137 302047.367   302066.387   302823.060
+595  HIVb+F+R7     149968.065   156 300248.130   300273.008   301131.402
+608  HIVw+R7       156560.873   137 313395.745   313414.765   314171.439
+621  HIVw+F+R7     154008.369   156 308328.737   308353.615   309212.009
+634  FLU+R7        149711.525   137 299697.051   299716.071   300472.744
+647  FLU+F+R7      149182.035   156 298676.070   298700.948   299559.342
+660  rtREV+R7      147424.705   137 295123.409   295142.429   295899.103
+673  rtREV+F+R7    145902.110   156 292116.220   292141.098   292999.492
+686  cpREV+R7      147901.010   137 296076.020   296095.040   296851.713
+699  cpREV+F+R7    147408.647   156 295129.294   295154.172   296012.566
+Akaike Information Criterion:           Q.yeast+F+R7
+Corrected Akaike Information Criterion: Q.yeast+F+R7
+Bayesian Information Criterion:         Q.yeast+F+R7
+Best-fit model: Q.yeast+F+R7 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.model.gz
+CPU time for ModelFinder: 23229.673 seconds (6h:27m:9s)
+Wall-clock time for ModelFinder: 3902.675 seconds (1h:5m:2s)
+Generating 1000 samples for ultrafast bootstrap (seed: 237824)...
+
+NOTE: 150 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -145479.972
+Optimal log-likelihood: -145479.824
+Site proportion and rates:  (0.140,0.033) (0.137,0.171) (0.188,0.395) (0.198,0.778) (0.174,1.439) (0.121,2.467) (0.043,4.588)
+Parameters optimization took 1 rounds (3.854 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.221848 sec (of wall-clock time) 1.309277 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.002115 sec (of wall-clock time) 0.012649 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -147074.329
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.961 second
+Computing log-likelihood of 98 initial trees ... 16.021 seconds
+Current best score: -145479.824
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -145479.546
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145479.077
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145478.656
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145478.237
+UPDATE BEST LOG-LIKELIHOOD: -145478.227
+Iteration 10 / LogL: -145478.227 / Time: 0h:1m:24s
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145477.864
+UPDATE BEST LOG-LIKELIHOOD: -145477.861
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145477.509
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145477.183
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145476.868
+Iteration 20 / LogL: -145476.895 / Time: 0h:2m:51s
+Finish initializing candidate tree set (3)
+Current best tree score: -145476.868 / CPU time: 165.209
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -145477.326 / Time: 0h:3m:30s (0h:8m:35s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145476.756
+Iteration 40 / LogL: -145480.404 / Time: 0h:4m:27s (0h:6m:57s left)
+UPDATE BEST LOG-LIKELIHOOD: -145476.748
+Iteration 50 / LogL: -145479.456 / Time: 0h:5m:18s (0h:5m:31s left)
+Log-likelihood cutoff on original alignment: -145567.938
+UFBoot trees printed to 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.ufboot
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145476.626
+Iteration 60 / LogL: -145476.648 / Time: 0h:6m:17s (0h:4m:21s left)
+Iteration 70 / LogL: -145477.074 / Time: 0h:7m:4s (0h:3m:10s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145476.514
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -145476.409
+Iteration 80 / LogL: -145476.845 / Time: 0h:7m:47s (0h:2m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -145476.403
+Iteration 90 / LogL: -145479.100 / Time: 0h:8m:31s (0h:1m:3s left)
+Iteration 100 / LogL: -145476.404 / Time: 0h:9m:25s (0h:0m:5s left)
+Log-likelihood cutoff on original alignment: -145547.765
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+UFBoot trees printed to 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.ufboot
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:9m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -145476.403
+2. Current log-likelihood: -145476.315
+3. Current log-likelihood: -145476.209
+4. Current log-likelihood: -145476.106
+5. Current log-likelihood: -145476.002
+6. Current log-likelihood: -145475.900
+7. Current log-likelihood: -145475.803
+8. Current log-likelihood: -145475.708
+9. Current log-likelihood: -145475.613
+10. Current log-likelihood: -145475.520
+11. Current log-likelihood: -145475.427
+12. Current log-likelihood: -145475.343
+13. Current log-likelihood: -145475.256
+14. Current log-likelihood: -145475.172
+15. Current log-likelihood: -145475.090
+16. Current log-likelihood: -145475.009
+17. Current log-likelihood: -145474.932
+18. Current log-likelihood: -145474.854
+19. Current log-likelihood: -145474.776
+20. Current log-likelihood: -145474.701
+21. Current log-likelihood: -145474.629
+22. Current log-likelihood: -145474.553
+23. Current log-likelihood: -145474.481
+24. Current log-likelihood: -145474.428
+25. Current log-likelihood: -145474.356
+26. Current log-likelihood: -145474.302
+27. Current log-likelihood: -145474.229
+28. Current log-likelihood: -145474.163
+29. Current log-likelihood: -145474.098
+30. Current log-likelihood: -145474.046
+31. Current log-likelihood: -145473.980
+32. Current log-likelihood: -145473.929
+33. Current log-likelihood: -145473.867
+34. Current log-likelihood: -145473.820
+35. Current log-likelihood: -145473.771
+36. Current log-likelihood: -145473.726
+37. Current log-likelihood: -145473.689
+38. Current log-likelihood: -145473.656
+39. Current log-likelihood: -145473.635
+40. Current log-likelihood: -145473.603
+41. Current log-likelihood: -145473.570
+42. Current log-likelihood: -145473.519
+43. Current log-likelihood: -145473.477
+44. Current log-likelihood: -145473.445
+45. Current log-likelihood: -145473.424
+46. Current log-likelihood: -145473.404
+47. Current log-likelihood: -145473.369
+48. Current log-likelihood: -145473.334
+49. Current log-likelihood: -145473.314
+50. Current log-likelihood: -145473.294
+51. Current log-likelihood: -145473.248
+52. Current log-likelihood: -145473.210
+53. Current log-likelihood: -145473.190
+54. Current log-likelihood: -145473.169
+55. Current log-likelihood: -145473.149
+56. Current log-likelihood: -145473.129
+57. Current log-likelihood: -145473.109
+58. Current log-likelihood: -145473.090
+59. Current log-likelihood: -145473.070
+60. Current log-likelihood: -145473.050
+61. Current log-likelihood: -145473.030
+62. Current log-likelihood: -145473.011
+63. Current log-likelihood: -145472.984
+64. Current log-likelihood: -145472.961
+65. Current log-likelihood: -145472.932
+66. Current log-likelihood: -145472.913
+67. Current log-likelihood: -145472.894
+68. Current log-likelihood: -145472.875
+69. Current log-likelihood: -145472.860
+70. Current log-likelihood: -145472.841
+71. Current log-likelihood: -145472.814
+72. Current log-likelihood: -145472.793
+73. Current log-likelihood: -145472.774
+74. Current log-likelihood: -145472.755
+75. Current log-likelihood: -145472.736
+76. Current log-likelihood: -145472.718
+77. Current log-likelihood: -145472.699
+78. Current log-likelihood: -145472.678
+79. Current log-likelihood: -145472.666
+80. Current log-likelihood: -145472.647
+Optimal log-likelihood: -145472.630
+Site proportion and rates:  (0.123,0.024) (0.141,0.152) (0.195,0.381) (0.201,0.770) (0.176,1.435) (0.121,2.469) (0.042,4.600)
+Parameters optimization took 80 rounds (152.433 sec)
+BEST SCORE FOUND : -145472.630
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.splits.nex
+Total tree length: 30.855
+
+Total number of iterations: 102
+CPU time used for tree search: 3382.021 sec (0h:56m:22s)
+Wall-clock time used for tree search: 569.911 sec (0h:9m:29s)
+Total CPU time used: 4330.539 sec (1h:12m:10s)
+Total wall-clock time used: 729.122 sec (0h:12m:9s)
+UFBoot trees printed to 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.splits.nex...
+64 taxa and 180 splits.
+Consensus tree written to 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.contree
+Reading input trees file 6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.contree
+Log-likelihood of consensus tree: -145472.674
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.treefile
+  Likelihood distances:          6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.splits.nex
+  Consensus tree:                6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.contree
+  UFBoot trees:                  6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.ufboot
+  Screen log file:               6-PhylogenyTree/Paramyxoviridae_tree/Paramyxoviridae.log
+
+Date and Time: Fri Jul  8 05:28:28 2022

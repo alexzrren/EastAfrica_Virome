@@ -1,0 +1,474 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    xx-compute-f07-1.xx.hn.hpc (AVX512, FMA3, 251 GB RAM)
+Command: iqtree -s 3-trimAl/Papillomaviridae_trimal.fa --prefix 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae --redo -T 6 --mem 48G --ufboot 1000 --boot-trees
+Seed:    121705 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  8 04:08:18 2022
+Kernel:  AVX+FMA - 6 threads (12 CPU cores detected)
+
+Reading alignment file 3-trimAl/Papillomaviridae_trimal.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 142 sequences with 567 columns, 564 distinct patterns
+521 parsimony-informative, 25 singleton sites, 21 constant sites
+                                Gap/Ambiguity  Composition  p-value
+   1  UV41-k141_1927047_Marker         58.02%    passed     24.48%
+   2  BAT613-k141_115687_Marker         0.00%    passed     76.91%
+   3  BAT613-k141_72988_Marker         73.02%    passed     12.27%
+   4  BAT613-k141_587224_Marker        44.80%    passed     60.07%
+   5  BAT0636-k141_198960_Marker       11.11%    passed     90.16%
+   6  BAT0636-k141_737280_Marker       53.26%    passed     86.72%
+   7  BAT0636-k141_730425_Marker        1.23%    passed     99.60%
+   8  BAT0646-k141_694174_Marker       10.05%    passed     99.30%
+   9  BAT1210-k141_108711_Marker       65.43%    passed     40.19%
+  10  BAT1213-k141_167157_Marker       64.20%    passed     79.47%
+  11  BAT1219-k141_13048_Marker        48.50%    passed     32.49%
+  12  BAT1224-k141_89775_Marker        71.96%    passed     53.33%
+  13  BAT1227-k141_25696_Marker        37.57%    passed     59.58%
+  14  BAT1537-k141_179354_Marker        0.88%    passed     99.93%
+  15  BAT1539-k141_66843_Marker        68.96%    passed     95.51%
+  16  BAT1553-k141_6366_Marker         60.49%    passed     53.20%
+  17  UGR83-k141_107590_Marker         60.85%    failed      2.18%
+  18  UGR52-k141_1562384_Marker         4.59%    passed     48.04%
+  19  UGR71-k141_572649_Marker         70.19%    passed     40.35%
+  20  BATORAL7VTM-k141_265934_Marker   42.50%    passed     49.40%
+  21  BFS128-k141_50115_Marker         14.46%    passed     67.27%
+  22  YP_224223.1                       1.06%    passed     98.22%
+  23  YP_008519310.1                    0.71%    passed     89.70%
+  24  YP_009345100.1                    0.00%    passed     84.23%
+  25  YP_008992242.1                    0.53%    passed     94.07%
+  26  QGF19307.1                        0.71%    passed     85.48%
+  27  YP_004169279.1                    0.35%    passed     28.89%
+  28  YP_007518500.1                    0.35%    passed     41.62%
+  29  AZL94139.1                        0.53%    passed     67.93%
+  30  YP_009553372.1                    1.76%    passed     95.52%
+  31  YP_009345079.1                    0.00%    passed     57.43%
+  32  YP_009272608.1                    2.29%    passed     96.16%
+  33  YP_009465960.1                    0.35%    passed     89.30%
+  34  YP_003204677.1                    0.18%    passed     77.84%
+  35  NP_597739.1                       0.00%    passed     99.11%
+  36  NP_040287.1                       1.76%    passed     42.52%
+  37  YP_009507262.1                    0.00%    passed     99.96%
+  38  YP_009466001.1                    3.00%    passed     92.79%
+  39  AAX86614.1                        0.53%    passed     53.19%
+  40  YP_009508744.1                    0.18%    passed     97.36%
+  41  YP_249600.1                       0.35%    passed     69.60%
+  42  YP_717909.1                       0.00%    passed     45.19%
+  43  YP_006666516.1                    0.88%    passed     91.26%
+  44  YP_009389434.1                    1.06%    passed     91.92%
+  45  NP_056815.1                       0.53%    passed     69.37%
+  46  YP_004169286.1                    0.18%    passed     52.53%
+  47  YP_009507335.1                    0.18%    passed     97.91%
+  48  QCQ84434.1                       20.81%    passed     96.93%
+  49  NP_057843.1                       1.59%    passed     99.84%
+  50  NP_932321.1                       0.71%    passed     72.81%
+  51  YP_004934014.1                    0.00%    passed     45.22%
+  52  YP_009389516.1                    0.18%    passed     95.84%
+  53  YP_007349391.1                    0.71%    failed      2.66%
+  54  YP_009177727.1                    0.35%    passed     54.15%
+  55  NP_040898.1                       0.00%    passed     94.85%
+  56  YP_001648802.1                    0.53%    passed     50.15%
+  57  YP_009465974.1                    0.18%    passed     86.09%
+  58  YP_009002599.1                    0.18%    passed     59.49%
+  59  AGM75105.1                        0.53%    passed     95.00%
+  60  NP_043418.1                       1.76%    passed     33.20%
+  61  NP_043425.1                       0.18%    passed     37.49%
+  62  NP_043439.1                       0.00%    passed     95.02%
+  63  YP_003668027.1                    0.00%    passed     69.97%
+  64  BAA90729.1                        1.06%    passed     76.61%
+  65  NP_040312.1                       0.88%    passed     70.40%
+  66  NP_041295.1                       0.35%    passed     40.65%
+  67  NP_077108.1                       1.06%    passed     58.78%
+  68  NP_620509.1                       1.06%    passed     90.98%
+  69  NP_647586.1                       3.35%    passed     10.36%
+  70  NP_663763.1                       3.70%    passed     75.02%
+  71  NP_694432.1                       3.70%    passed     65.71%
+  72  YP_610955.1                       4.23%    passed     89.92%
+  73  YP_656494.1                       0.00%    passed     99.86%
+  74  YP_873941.1                       1.94%    passed     75.48%
+  75  YP_001672010.1                    0.18%    passed     95.31%
+  76  YP_002117841.1                    0.53%    passed     91.94%
+  77  YP_002235539.1                    2.12%    passed     52.11%
+  78  YP_002308359.1                    9.70%    passed     99.19%
+  79  YP_002635571.1                   23.99%    passed     20.33%
+  80  YP_003104799.1                    5.64%    passed     28.96%
+  81  YP_003622565.1                    3.00%    passed     99.70%
+  82  YP_004169265.1                    0.18%    passed     63.86%
+  83  YP_004169293.1                    0.71%    passed     32.82%
+  84  YP_004306475.1                    0.00%    passed     15.58%
+  85  YP_004646340.1                    0.71%    passed     98.72%
+  86  YP_004857837.1                    1.06%    passed     83.51%
+  87  YP_004895382.1                    0.71%    passed     87.81%
+  88  YP_005271218.1                    0.88%    passed     19.57%
+  89  YP_006908974.1                    0.18%    passed     77.26%
+  90  YP_008828147.1                    0.00%    passed     96.63%
+  91  YP_009022073.1                    4.06%    passed     30.61%
+  92  YP_009041469.1                    5.82%    passed     85.54%
+  93  YP_009134745.1                    0.00%    passed     54.23%
+  94  YP_009158854.1                    0.00%    passed     39.34%
+  95  YP_009163893.1                    0.18%    passed     53.97%
+  96  YP_009175016.1                    0.00%    passed     59.12%
+  97  YP_009182326.1                    0.71%    passed     93.41%
+  98  YP_009252393.1                    1.23%    passed     70.43%
+  99  YP_009272700.1                   13.76%    passed     47.94%
+ 100  YP_009315922.1                    0.18%    passed     15.30%
+ 101  YP_009362308.1                    3.00%    passed     17.08%
+ 102  YP_009389459.1                    0.53%    passed     99.64%
+ 103  YP_009408618.1                    2.12%    passed     94.56%
+ 104  YP_009465952.1                    0.00%    passed     91.88%
+ 105  YP_009465990.1                    0.18%    passed     56.90%
+ 106  YP_009507274.1                    1.06%    passed     93.19%
+ 107  YP_009507281.1                    0.53%    passed     79.36%
+ 108  YP_009507287.1                    0.88%    passed     78.71%
+ 109  YP_009507299.1                    0.18%    passed     46.83%
+ 110  YP_009507306.1                    0.53%    passed     85.67%
+ 111  YP_009508757.1                    0.88%    passed     55.96%
+ 112  YP_009508762.1                    0.53%    passed     95.35%
+ 113  YP_009508894.1                    0.53%    passed     91.96%
+ 114  YP_009551916.1                    3.53%    passed      6.96%
+ 115  YP_009551988.1                    0.71%    passed     56.90%
+ 116  YP_009552035.1                    0.35%    passed     27.57%
+ 117  YP_009552068.1                    1.06%    passed     93.74%
+ 118  YP_009552750.1                    0.35%    passed     98.01%
+ 119  YP_009552782.1                    0.35%    passed     91.18%
+ 120  YP_009553206.1                    1.06%    passed     66.65%
+ 121  YP_009553273.1                    0.00%    passed     85.29%
+ 122  YP_009553524.1                    0.18%    passed     44.96%
+ 123  YP_009553595.1                    0.18%    passed     94.28%
+ 124  YP_009553627.1                    0.71%    passed     81.70%
+ 125  BAF95816.1                        1.94%    passed     90.08%
+ 126  YP_406559.1                       1.23%    passed     96.79%
+ 127  YP_002756547.1                    0.35%    passed     89.28%
+ 128  YP_003084348.1                    0.00%    passed     38.64%
+ 129  YP_006470623.1                    0.53%    passed     54.19%
+ 130  YP_006470629.1                    0.53%    passed     70.37%
+ 131  YP_006470635.1                    0.71%    passed     61.22%
+ 132  YP_008433328.1                    0.18%    passed     97.89%
+ 133  YP_008720073.1                    1.06%    passed     90.42%
+ 134  YP_009022059.1                    0.00%    passed     84.54%
+ 135  YP_009175022.1                    1.59%    passed     93.63%
+ 136  YP_009272595.1                    0.18%    passed     29.82%
+ 137  YP_009272601.1                    0.53%    passed     97.49%
+ 138  YP_009408612.1                    1.23%    passed     99.99%
+ 139  YP_009508231.1                    0.18%    passed     98.99%
+ 140  YP_009508768.1                    2.65%    passed     74.32%
+ 141  YP_009552049.1                    0.88%    passed     70.13%
+ 142  YP_009553359.1                    2.47%    passed     97.03%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                             7.32%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.135 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -103047.048
+Optimal log-likelihood: -103046.885
+Proportion of invariable sites: 0.037
+Gamma shape alpha: 1.176
+Parameters optimization took 1 rounds (0.351 sec)
+Time for fast ML tree search: 3.421 seconds
+
+NOTE: ModelFinder requires 130 MB RAM!
+ModelFinder will test up to 702 protein models (sample size: 567) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            109132.597   281 218827.194   219383.278   220046.835
+  2  LG+I          108294.530   282 217153.061   217715.075   218377.042
+  3  LG+G4         103154.259   282 206872.518   207434.533   208096.500
+  4  LG+I+G4       103046.868   283 206659.736   207227.736   207888.057
+  5  LG+R2         104410.645   283 209387.290   209955.290   210615.612
+  6  LG+R3         103422.486   285 207414.973   207995.115   208651.975
+  7  LG+R4         103028.836   287 206631.673   207224.189   207877.356
+  8  LG+R5         102893.145   289 206364.289   206969.415   207618.653
+  9  LG+R6         102804.521   291 206191.043   206809.021   207454.087
+ 10  LG+R7         102788.585   293 206163.169   206794.246   207434.894
+ 11  LG+R8         102777.846   295 206145.692   206790.120   207426.098
+ 12  LG+R9         102775.394   297 206144.788   206802.825   207433.874
+ 23  LG+F+R7       102616.551   312 205857.102   206626.047   207211.295
+ 24  LG+F+R8       102608.135   314 205844.269   206629.269   207207.142
+ 25  LG+F+R9       102608.008   316 205848.016   206649.392   207219.570
+ 36  WAG+R7        103733.456   293 208052.912   208683.989   209324.637
+ 37  WAG+R8        103730.491   295 208050.982   208695.410   209331.388
+ 49  WAG+F+R7      103629.360   312 207882.721   208651.666   209236.913
+ 50  WAG+F+R8      103626.180   314 207880.361   208665.361   209243.234
+ 62  JTT+R7        103908.133   293 208402.266   209033.343   209673.991
+ 63  JTT+R8        103901.946   295 208393.892   209038.320   209674.298
+ 75  JTT+F+R7      103597.061   312 207818.123   208587.067   209172.315
+ 76  JTT+F+R8      103593.319   314 207814.637   208599.637   209177.510
+ 88  Q.pfam+R7     102820.551   293 206227.102   206858.179   207498.827
+ 89  Q.pfam+R8     102814.649   295 206219.297   206863.725   207499.703
+101  Q.pfam+F+R7   102554.266   312 205732.532   206501.476   207086.724
+102  Q.pfam+F+R8   102549.592   314 205727.183   206512.183   207090.056
+114  Q.bird+R7     105943.053   293 212472.105   213103.182   213743.831
+115  Q.bird+R8     105927.721   295 212445.442   213089.870   213725.848
+116  Q.bird+R9     105922.073   297 212438.146   213096.183   213727.233
+127  Q.bird+F+R7   105601.863   312 211827.726   212596.671   213181.918
+128  Q.bird+F+R8   105584.363   314 211796.727   212581.727   213159.599
+129  Q.bird+F+R9   105580.760   316 211793.521   212594.897   213165.074
+140  Q.mammal+R7   104954.942   293 210495.884   211126.961   211767.609
+141  Q.mammal+R8   104942.448   295 210474.896   211119.324   211755.302
+142  Q.mammal+R9   104933.066   297 210460.133   211118.170   211749.219
+153  Q.mammal+F+R7 104598.779   312 209821.557   210590.502   211175.749
+154  Q.mammal+F+R8 104586.331   314 209800.662   210585.662   211163.535
+155  Q.mammal+F+R9 104579.756   316 209791.512   210592.888   211163.065
+166  Q.insect+R7   102509.094   293 205604.189   206235.266   206875.914
+167  Q.insect+R8   102498.044   295 205586.089   206230.517   206866.495
+168  Q.insect+R9   102495.879   297 205585.757   206243.794   206874.844
+179  Q.insect+F+R7 102360.715   312 205345.429   206114.374   206699.621
+180  Q.insect+F+R8 102344.332   314 205316.664   206101.664   206679.537
+181  Q.insect+F+R9 102341.365   316 205314.731   206116.107   206686.284
+192  Q.plant+R7    103782.921   293 208151.841   208782.918   209423.566
+193  Q.plant+R8    103774.371   295 208138.743   208783.171   209419.149
+194  Q.plant+R9    103764.220   297 208122.440   208780.477   209411.526
+205  Q.plant+F+R7  103477.908   312 207579.815   208348.760   208934.007
+206  Q.plant+F+R8  103461.164   314 207550.329   208335.329   208913.202
+207  Q.plant+F+R9  103456.322   316 207544.644   208346.020   208916.198
+218  Q.yeast+R7    102744.429   293 206074.859   206705.936   207346.584
+219  Q.yeast+R8    102742.220   295 206074.439   206718.867   207354.845
+231  Q.yeast+F+R7  102226.923   312 205077.845   205846.790   206432.037
+232  Q.yeast+F+R8  102222.171   314 205072.342   205857.342   206435.215
+244  JTTDCMut+R7   103881.624   293 208349.247   208980.324   209620.973
+245  JTTDCMut+R8   103875.476   295 208340.952   208985.380   209621.358
+257  JTTDCMut+F+R7 103594.011   312 207812.022   208580.967   209166.214
+258  JTTDCMut+F+R8 103589.941   314 207807.881   208592.881   209170.754
+270  DCMut+R7      104766.738   293 210119.477   210750.554   211391.202
+271  DCMut+R8      104759.206   295 210108.411   210752.839   211388.817
+272  DCMut+R9      104750.852   297 210095.705   210753.742   211384.792
+283  DCMut+F+R7    104473.128   312 209570.257   210339.201   210924.449
+284  DCMut+F+R8    104468.809   314 209565.619   210350.619   210928.491
+296  VT+R7         103894.991   293 208375.982   209007.059   209647.708
+297  VT+R8         103893.544   295 208377.089   209021.517   209657.495
+309  VT+F+R7       103697.076   312 208018.152   208787.097   209372.344
+310  VT+F+R8       103695.560   314 208019.120   208804.120   209381.993
+322  PMB+R7        104664.482   293 209914.964   210546.041   211186.690
+323  PMB+R8        104654.371   295 209898.742   210543.170   211179.148
+324  PMB+R9        104654.382   297 209902.765   210560.802   211191.851
+335  PMB+F+R7      104891.426   312 210406.853   211175.798   211761.045
+336  PMB+F+R8      104882.707   314 210393.414   211178.414   211756.287
+337  PMB+F+R9      104882.867   316 210397.734   211199.110   211769.287
+348  Blosum62+R7   104664.292   293 209914.585   210545.662   211186.310
+349  Blosum62+R8   104657.629   295 209905.259   210549.687   211185.665
+350  Blosum62+R9   104657.619   297 209909.238   210567.275   211198.325
+361  Blosum62+F+R7 104790.202   312 210204.404   210973.349   211558.596
+362  Blosum62+F+R8 104785.809   314 210199.618   210984.618   211562.491
+374  Dayhoff+R7    104761.665   293 210109.331   210740.408   211381.056
+375  Dayhoff+R8    104753.893   295 210097.785   210742.213   211378.191
+376  Dayhoff+R9    104745.778   297 210085.557   210743.594   211374.643
+387  Dayhoff+F+R7  104470.450   312 209564.901   210333.846   210919.093
+388  Dayhoff+F+R8  104466.036   314 209560.072   210345.072   210922.945
+400  mtREV+R7      108752.292   293 218090.583   218721.660   219362.308
+401  mtREV+R8      108731.690   295 218053.379   218697.807   219333.785
+402  mtREV+R9      108725.180   297 218044.359   218702.397   219333.446
+413  mtREV+F+R7    105795.502   312 212215.003   212983.948   213569.195
+414  mtREV+F+R8    105777.310   314 212182.620   212967.620   213545.493
+415  mtREV+F+R9    105775.163   316 212182.325   212983.701   213553.879
+426  mtART+R7      108194.943   293 216975.886   217606.963   218247.612
+427  mtART+R8      108163.285   295 216916.571   217560.999   218196.977
+428  mtART+R9      108157.093   297 216908.186   217566.224   218197.273
+439  mtART+F+R7    105522.718   312 211669.436   212438.381   213023.628
+440  mtART+F+R8    105507.376   314 211642.753   212427.753   213005.626
+441  mtART+F+R9    105506.989   316 211645.977   212447.353   213017.531
+452  mtZOA+R7      105971.230   293 212528.460   213159.537   213800.186
+453  mtZOA+R8      105946.264   295 212482.528   213126.956   213762.934
+454  mtZOA+R9      105943.648   297 212481.295   213139.332   213770.382
+465  mtZOA+F+R7    104448.277   312 209520.554   210289.499   210874.746
+466  mtZOA+F+R8    104428.129   314 209484.258   210269.258   210847.130
+467  mtZOA+F+R9    104424.335   316 209480.671   210282.047   210852.224
+478  mtMet+R7      108005.328   293 216596.657   217227.734   217868.382
+479  mtMet+R8      107996.587   295 216583.174   217227.603   217863.580
+480  mtMet+R9      107974.972   297 216543.945   217201.982   217833.031
+491  mtMet+F+R7    104939.006   312 210502.012   211270.956   211856.204
+492  mtMet+F+R8    104923.912   314 210475.824   211260.824   211838.697
+493  mtMet+F+R9    104919.855   316 210471.710   211273.086   211843.264
+504  mtVer+R7      109742.590   293 220071.180   220702.257   221342.905
+505  mtVer+R8      109700.844   295 219991.689   220636.117   221272.095
+506  mtVer+R9      109682.649   297 219959.298   220617.335   221248.384
+517  mtVer+F+R7    107050.574   312 214725.148   215494.093   216079.340
+518  mtVer+F+R8    107038.348   314 214704.697   215489.697   216067.570
+519  mtVer+F+R9    107030.508   316 214693.016   215494.392   216064.569
+530  mtInv+R7      108135.065   293 216856.130   217487.207   218127.855
+531  mtInv+R8      108131.323   295 216852.646   217497.074   218133.052
+543  mtInv+F+R7    104076.723   312 208777.446   209546.391   210131.639
+544  mtInv+F+R8    104064.420   314 208756.840   209541.840   210119.713
+545  mtInv+F+R9    104063.886   316 208759.773   209561.149   210131.326
+556  mtMAM+R7      111202.829   293 222991.658   223622.735   224263.383
+557  mtMAM+R8      111180.703   295 222951.406   223595.834   224231.812
+558  mtMAM+R9      111151.620   297 222897.240   223555.277   224186.326
+569  mtMAM+F+R7    108148.376   312 216920.751   217689.696   218274.943
+570  mtMAM+F+R8    108128.363   314 216884.726   217669.726   218247.599
+571  mtMAM+F+R9    108106.958   316 216845.916   217647.292   218217.470
+582  HIVb+R7       106312.211   293 213210.423   213841.500   214482.148
+583  HIVb+R8       106283.449   295 213156.898   213801.326   214437.304
+584  HIVb+R9       106274.522   297 213143.044   213801.081   214432.131
+595  HIVb+F+R7     105592.171   312 211808.341   212577.286   213162.534
+596  HIVb+F+R8     105568.713   314 211765.427   212550.427   213128.300
+597  HIVb+F+R9     105568.124   316 211768.248   212569.624   213139.802
+608  HIVw+R7       113095.060   293 226776.120   227407.197   228047.845
+609  HIVw+R8       113058.317   295 226706.633   227351.061   227987.039
+WARNING: Log-likelihood -113067 of HIVw+R9 worse than HIVw+R8 -113058
+610  HIVw+R9       113067.212   297 226728.425   227386.462   228017.512
+621  HIVw+F+R7     110441.293   312 221506.586   222275.531   222860.778
+622  HIVw+F+R8     110427.107   314 221482.215   222267.215   222845.087
+WARNING: Log-likelihood -110432 of HIVw+F+R9 worse than HIVw+F+R8 -110427
+623  HIVw+F+R9     110432.043   316 221496.086   222297.462   222867.639
+634  FLU+R7        106964.751   293 214515.502   215146.579   215787.228
+635  FLU+R8        106957.949   295 214505.897   215150.326   215786.303
+636  FLU+R9        106946.685   297 214487.370   215145.407   215776.457
+647  FLU+F+R7      105988.257   312 212600.514   213369.459   213954.706
+648  FLU+F+R8      105981.495   314 212590.991   213375.991   213953.863
+649  FLU+F+R9      105974.745   316 212581.489   213382.865   213953.043
+660  rtREV+R7      103785.084   293 208156.169   208787.246   209427.894
+661  rtREV+R8      103778.147   295 208146.294   208790.722   209426.700
+662  rtREV+R9      103777.273   297 208148.547   208806.584   209437.633
+673  rtREV+F+R7    103122.190   312 206868.380   207637.325   208222.572
+674  rtREV+F+R8    103114.588   314 206857.176   207642.176   208220.049
+675  rtREV+F+R9    103111.056   316 206854.112   207655.488   208225.666
+686  cpREV+R7      104687.415   293 209960.829   210591.906   211232.554
+687  cpREV+R8      104680.522   295 209951.045   210595.473   211231.451
+688  cpREV+R9      104676.791   297 209947.583   210605.620   211236.670
+699  cpREV+F+R7    104688.915   312 210001.830   210770.775   211356.022
+700  cpREV+F+R8    104685.506   314 209999.012   210784.012   211361.885
+Akaike Information Criterion:           Q.yeast+F+R8
+Corrected Akaike Information Criterion: Q.yeast+F+R7
+Bayesian Information Criterion:         Q.yeast+F+R7
+Best-fit model: Q.yeast+F+R7 chosen according to BIC
+
+All model information printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.model.gz
+CPU time for ModelFinder: 19542.753 seconds (5h:25m:42s)
+Wall-clock time for ModelFinder: 3289.019 seconds (0h:54m:49s)
+Generating 1000 samples for ultrafast bootstrap (seed: 121705)...
+
+NOTE: 91 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -102226.923
+Optimal log-likelihood: -102226.921
+Site proportion and rates:  (0.081,0.018) (0.095,0.142) (0.128,0.342) (0.182,0.629) (0.219,1.076) (0.198,1.686) (0.097,2.647)
+Parameters optimization took 1 rounds (0.954 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 1.015739 sec (of wall-clock time) 5.453408 sec(of CPU time)
+Computing RapidNJ tree took 0.009306 sec (of wall-clock time) 0.056105 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -103117.542
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 9.828 second
+Computing log-likelihood of 98 initial trees ... 16.480 seconds
+Current best score: -102226.921
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -102222.339
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -102169.965
+Iteration 10 / LogL: -102201.597 / Time: 0h:1m:7s
+Iteration 20 / LogL: -102216.532 / Time: 0h:1m:46s
+Finish initializing candidate tree set (20)
+Current best tree score: -102169.965 / CPU time: 102.306
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -102165.860
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -102161.501
+Iteration 30 / LogL: -102168.300 / Time: 0h:2m:31s (0h:8m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -102160.158
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -102158.352
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -102153.089
+Iteration 40 / LogL: -102153.089 / Time: 0h:3m:19s (0h:8m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 50: -102138.628
+Iteration 50 / LogL: -102138.628 / Time: 0h:4m:0s (0h:8m:11s left)
+Log-likelihood cutoff on original alignment: -102237.333
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+Iteration 60 / LogL: -102230.104 / Time: 0h:4m:36s (0h:7m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 64: -102137.047
+Iteration 70 / LogL: -102152.403 / Time: 0h:5m:20s (0h:7m:16s left)
+Iteration 80 / LogL: -102139.430 / Time: 0h:6m:1s (0h:6m:23s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 85: -102135.612
+Iteration 90 / LogL: -102140.085 / Time: 0h:6m:44s (0h:7m:11s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 92: -102133.684
+Iteration 100 / LogL: -102147.302 / Time: 0h:7m:18s (0h:6m:47s left)
+Log-likelihood cutoff on original alignment: -102229.798
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.987
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+Iteration 110 / LogL: -102139.415 / Time: 0h:7m:58s (0h:6m:35s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 113: -102133.106
+Iteration 120 / LogL: -102135.027 / Time: 0h:8m:39s (0h:6m:46s left)
+Iteration 130 / LogL: -102143.537 / Time: 0h:9m:15s (0h:5m:57s left)
+Iteration 140 / LogL: -102141.122 / Time: 0h:9m:40s (0h:5m:4s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 141: -102132.001
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 149: -102131.128
+Iteration 150 / LogL: -102151.091 / Time: 0h:10m:6s (0h:6m:43s left)
+Log-likelihood cutoff on original alignment: -102225.730
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+Iteration 160 / LogL: -102131.273 / Time: 0h:10m:28s (0h:5m:51s left)
+Iteration 170 / LogL: -102131.388 / Time: 0h:10m:50s (0h:5m:4s left)
+Iteration 180 / LogL: -102133.451 / Time: 0h:11m:12s (0h:4m:19s left)
+Iteration 190 / LogL: -102132.783 / Time: 0h:11m:33s (0h:3m:36s left)
+Iteration 200 / LogL: -102144.587 / Time: 0h:11m:55s (0h:2m:56s left)
+Log-likelihood cutoff on original alignment: -102225.730
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+Iteration 210 / LogL: -102131.474 / Time: 0h:12m:17s (0h:5m:17s left)
+Iteration 220 / LogL: -102226.499 / Time: 0h:12m:40s (0h:4m:37s left)
+Iteration 230 / LogL: -102131.241 / Time: 0h:13m:3s (0h:3m:59s left)
+Iteration 240 / LogL: -102136.012 / Time: 0h:13m:24s (0h:3m:21s left)
+Iteration 250 / LogL: -102291.172 / Time: 0h:13m:45s (0h:2m:45s left)
+Log-likelihood cutoff on original alignment: -102225.730
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+TREE SEARCH COMPLETED AFTER 250 ITERATIONS / Time: 0h:13m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -102131.128
+Optimal log-likelihood: -102131.128
+Site proportion and rates:  (0.082,0.019) (0.099,0.147) (0.133,0.358) (0.174,0.640) (0.211,1.072) (0.197,1.655) (0.104,2.624)
+Parameters optimization took 1 rounds (0.372 sec)
+BEST SCORE FOUND : -102131.128
+Creating bootstrap support values...
+Split supports printed to NEXUS file 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.splits.nex
+Total tree length: 66.458
+
+Total number of iterations: 250
+CPU time used for tree search: 4829.171 sec (1h:20m:29s)
+Wall-clock time used for tree search: 822.442 sec (0h:13m:42s)
+Total CPU time used: 4855.777 sec (1h:20m:55s)
+Total wall-clock time used: 827.134 sec (0h:13m:47s)
+UFBoot trees printed to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.splits.nex...
+142 taxa and 1003 splits.
+Consensus tree written to 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.contree
+Reading input trees file 6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.contree
+Log-likelihood of consensus tree: -102136.134
+
+Analysis results written to: 
+  IQ-TREE report:                6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.iqtree
+  Maximum-likelihood tree:       6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.treefile
+  Likelihood distances:          6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.splits.nex
+  Consensus tree:                6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.contree
+  UFBoot trees:                  6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.ufboot
+  Screen log file:               6-PhylogenyTree/Papillomaviridae_tree/Papillomaviridae.log
+
+Date and Time: Fri Jul  8 05:16:56 2022
